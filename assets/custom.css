@@ -40,8 +40,8 @@ white : #fff;
 
 .button--primary {
 
-    background: #fff;
-    color:#000;
+    background: #fff!important;
+    color:#000!important;
   
 }
 

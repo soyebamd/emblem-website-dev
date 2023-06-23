@@ -114,6 +114,11 @@
 
 
 
+{%- if section.settings.show_social and has_social_icons -%}
+{%- render 'social-icons' -%}
+{%- endif -%}
+
+social
 {%- if section.settings.newsletter_enable -%}
 <div class="footer-block__newsletter">
   {%- if section.settings.newsletter_heading != blank -%}
@@ -123,11 +128,6 @@
   {%- endif -%}
 
 
-  {%- if section.settings.show_social and has_social_icons -%}
-  {%- render 'social-icons' -%}
-{%- endif -%}
-
-social
   {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
     <input type="hidden" name="contact[tags]" value="newsletter">
     <div class="newsletter-form__field-wrapper">

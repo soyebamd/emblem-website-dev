@@ -38,7 +38,9 @@
 
 
 
-<!-- Custom Footer -->
+{% comment %}
+  Custom footer
+{% endcomment %}
 <div class="footer__content-top page-width">
 
 
@@ -62,7 +64,15 @@
 
 </div>
 
-<div class="footer-block grid__item scroll-trigger animate--slide-in">Right</div>
+<div class="footer-block grid__item scroll-trigger animate--slide-in">
+
+
+{% comment %}
+  newsletter
+{% endcomment %}
+
+
+</div>
 
 
 
@@ -535,6 +545,45 @@
     }
   ],
   "settings": [
+
+
+        {
+          "type": "image_picker",
+          "id": "footer_image",
+          "label": "Image"
+        },
+
+        {
+          "type": "range",
+          "id": "footer_image_width",
+          "min": 50,
+          "max": 550,
+          "step": 5,
+          "unit": "px",
+          "label": "Image width",
+          "default": 100
+        },
+        {
+          "type": "select",
+          "id": "footer_alignment",
+          "label": "Image alignment on large screen",
+          "options": [
+            {
+              "value": "",
+              "label": "Left"
+            },
+            {
+              "value": "center",
+              "label": "Center"
+            },
+            {
+              "value": "right",
+              "label": "Right"
+            }
+          ],
+          "default": "center"
+        }
+      ,
     {
       "type": "color_scheme",
       "id": "color_scheme",

@@ -48,6 +48,27 @@ h3,.h3{font-size: 2rem; }
 
 #secondary-footer{ padding-top: 4rem;}
 
+.footer__copyright {
+    text-align: left;
+   
+}
+
+.copyright__content{
+    font-size: .875rem;
+}
+
+.policies {
+    display: block;
+    margin-top: 10px;
+}
+
+.policies li:after {
+    content: '|';
+    font-size: 14px;
+    line-height: 29px;
+    padding: 0 8px;
+}
+
 .button {
     min-width: 272px;
     height: 65px;

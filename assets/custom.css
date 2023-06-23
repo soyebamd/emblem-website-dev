@@ -54,11 +54,11 @@ h3,.h3{font-size: 2rem; }
 }
 
 .copyright__content{
-    font-size: .875rem;
+    font-size: .875rem!important;
 }
 
 .policies {
-    display: block;
+    display: block!important;
     margin-top: 10px;
 }
 
@@ -69,6 +69,9 @@ h3,.h3{font-size: 2rem; }
     padding: 0 8px;
 }
 
+
+.policies li:before{ display: none;}
+ 
 .button {
     min-width: 272px;
     height: 65px;

@@ -62,16 +62,17 @@
 
 {%  assign fotoer_logo_width =  section.settings.footer_image_width  %}
 
-{{fotoer_logo_width}}
+
+<div class="footer-block__details-content footer-block-image {{ section.settings.footer_alignment }}">
+
+
+<img src="{{ section.settings.footer_image | image_url: width: fotoer_logo_width }}" alt="Emblem">
 
 
 
+</div>
 
 
-{{ section.settings.footer_alignment }}
-
-
-<img src="{{ section.settings.footer_image | image_url: width: fotoer_logo_width }}" alt="">
 
 </div>
 

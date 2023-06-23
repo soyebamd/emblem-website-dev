@@ -25,10 +25,12 @@ white : #fff;
 
 .header__icon, .header__icon--cart .icon{ width:30px; height: 30px;}
 
+html{ font-size: 100%; }
 
-h1, .h1{ font-size: 4em; }
 
-h2, .h2{ font-size: 3em; }
+h1, .h1{ font-size: 4rem; }
+
+h2, .h2{ font-size: 3rem; }
 
 h3,.h3{font-size: 2rem; }
 

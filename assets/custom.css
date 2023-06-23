@@ -118,9 +118,15 @@ text-transform: uppercase;
 
 
 
-.footer__content-top .list-menu__item{font-size: 1.25rem;
+.list-menu__item{font-size: 1.25rem;
     text-transform: uppercase;
-    color: #fff!important; opacity: 1; font-family: Oswald, sans-serif; font-family: Lato, sans-serif;}
+    color: #fff!important; opacity: 1; font-family: Oswald, sans-serif; }
+
+
+    
+
+.footer__content-top .list-menu__item{font-size: 1.25rem;
+     font-family: Lato, sans-serif;}
 
    
 
@@ -129,9 +135,9 @@ text-transform: uppercase;
 
     .social-icon-v{ display: flex;     margin-bottom: 20px; align-items: center; }
 
-  .footer__content-top  .link.list-menu__item--link{ padding: 0; margin: 0;}
+    .link.list-menu__item--link{ padding: 0; margin: 0;}
 
-  .footer__content-top  .list-social__item a.list-social__link{    padding: 0.5rem; }
+    .list-social__item a.list-social__link{    padding: 0.5rem; }
 
     .footer__list-social{ margin-left: 1rem;}
 

@@ -1,1 +1,42 @@
+/*
+Theme
+
+primary color (red) : #B3341C;
+
+secondary color (gray) : #151415;
+
+black : #000;
+
+white : #fff;
+
+*/
+
+.bg-red{ background-color:  #B3341C;}
+
+.bg-gray{ background-color:  #151415;}
+
+.bg-black { background-color: #000; }
+
+.bg-white { background-color: #fff; }
+
+.text-white { color: #fff!important; }
+
+.text-black {color:#000; }
+
 .header__icon, .header__icon--cart .icon{ width:30px; height: 30px;}
+
+.button {
+    min-width: 272px;
+    height: 65px;
+    opacity: 1!important;
+    border:0!important;
+}
+
+.button--primary {
+    background: #B3341C;
+    opacity: 1!important;
+    border: 0!important;
+    color: #fff;
+}
+
+.button:after{ display: none; }

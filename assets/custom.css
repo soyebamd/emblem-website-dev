@@ -143,6 +143,15 @@ text-transform: uppercase;
 
 .newsletter-form__field-wrapper .field__label{     height: 52px; font-size: 14px;}
 
+
+.newsletter-form__field-wrapper .field__input {
+   
+    padding: 0;
+    height: 52px;
+}
+
+
+
 @media screen and (min-width: 990px){
 .header {
     padding-top: .55rem;

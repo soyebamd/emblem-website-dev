@@ -125,6 +125,11 @@ text-transform: uppercase;
     .header__heading-logo{ width: 32px; }
 
 
+    .social-icon-v{ display: flex;}
+
+.m-0{ margin:0; }
+
+
 @media screen and (min-width: 990px){
 .header {
     padding-top: .55rem;

@@ -118,6 +118,12 @@
 <div class="footer-block__newsletter">
   {%- if section.settings.newsletter_heading != blank -%}
     <h2 class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</h2>
+
+    {%- if section.settings.show_social and has_social_icons -%}
+    {%- render 'social-icons' -%}
+  {%- endif -%}
+
+  
   {%- endif -%}
   {%- form 'customer', id: 'ContactFooter', class: 'footer__newsletter newsletter-form' -%}
     <input type="hidden" name="contact[tags]" value="newsletter">
@@ -345,9 +351,7 @@
             </div>
           {%- endif -%}
 
-          {%- if section.settings.show_social and has_social_icons -%}
-            {%- render 'social-icons' -%}
-          {%- endif -%}
+         
         </div>
       </div>
     {%- endunless -%}

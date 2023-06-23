@@ -139,8 +139,13 @@
   newsletter
 {% endcomment %}
 {%- if section.settings.show_social -%}
+<div class="grid grid--2-col">
+  <div class="grid__item">
 <h2 class="footer-block__heading inline-richtext">FOLLOW EMBLEM</h2>
+</div>
+<div class="grid__item">
 {%- render 'social-icons' -%}
+</div></div>
 {%- endif -%}
 
 {% comment %}
@@ -185,7 +190,7 @@ social{% endcomment %}
           required
         >
         <label class="field__label" for="NewsletterForm--{{ section.id }}">
-          {{ 'newsletter.label' | t }}
+          {{ section.settings.newsletter_heading }}
         </label>
         <button
           type="submit"

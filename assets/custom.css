@@ -131,6 +131,15 @@ text-transform: uppercase;
 
 .min-width-auto{ min-width: auto;}
 
+.newsletter-form__field-wrapper .button {
+    min-width: 272px;
+    height: 53px;
+    background: #B3341C;
+    font-size: 16px;
+    line-height: 53px;
+    min-height: 53px;
+}
+
 
 @media screen and (min-width: 990px){
 .header {

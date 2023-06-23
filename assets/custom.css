@@ -125,9 +125,11 @@ text-transform: uppercase;
     .header__heading-logo{ width: 32px; }
 
 
-    .social-icon-v{ display: flex;}
+    .social-icon-v{ display: flex;     margin-bottom: 20px; }
 
 .m-0{ margin:0; }
+
+.min-width-auto{ min-width: auto;}
 
 
 @media screen and (min-width: 990px){

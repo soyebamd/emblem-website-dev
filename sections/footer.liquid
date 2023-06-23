@@ -141,7 +141,7 @@
 {%- if section.settings.show_social -%}
 <div class="social-icon-v">
   <div>
-<h2 class="footer-block__heading inline-richtext m-0">FOLLOW EMBLEM</h2>
+<h2 class="m-0">FOLLOW EMBLEM</h2>
 </div>
 <div >
 {%- render 'social-icons' -%}
@@ -194,12 +194,12 @@ social{% endcomment %}
         </label>
         <button
           type="submit"
-          class="newsletter-form__button field__button"
+          class="button min-width-auto"
           name="commit"
           id="Subscribe"
           aria-label="{{ 'newsletter.button_label' | t }}"
         >
-          {% render 'icon-arrow' %}
+          Submit
         </button>
       </div>
       {%- if form.errors -%}

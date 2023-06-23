@@ -35,10 +35,13 @@ white : #fff;
     opacity: 1!important;
     border: 0!important;
     color: #fff;
-    
+
 }
 
 .button--primary {
+
+    background: #fff;
+    color:#000;
   
 }
 

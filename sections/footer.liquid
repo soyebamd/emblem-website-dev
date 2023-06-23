@@ -32,7 +32,10 @@
 
 <footer class="footer color-{{ section.settings.color_scheme }} gradient section-{{ section.id }}-padding">
 
-
+sdfsdfdsf
+          {%- if section.settings.show_social and has_social_icons -%}
+            {%- render 'social-icons' -%}
+          {%- endif -%}
 
 
 
@@ -344,10 +347,7 @@
               {% # theme-check-enable %}
             </div>
           {%- endif -%}
-sdfsdfdsf
-          {%- if section.settings.show_social and has_social_icons -%}
-            {%- render 'social-icons' -%}
-          {%- endif -%}
+
         </div>
       </div>
     {%- endunless -%}

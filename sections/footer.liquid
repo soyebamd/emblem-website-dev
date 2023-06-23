@@ -81,7 +81,9 @@
 
 
 <ul class="footer-block__details-content list-unstyled">
-  {%- for link in footer-menu.menu.links -%}
+
+    {% for link in linklists.footer-menu.links -%}
+
     <li>
       <a
         href="{{ link.url }}"

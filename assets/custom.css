@@ -127,7 +127,7 @@ text-transform: uppercase;
 
     .social-icon-v{ display: flex;     margin-bottom: 20px; align-items: center; }
 
-    .list-social__item .list-social__link{    padding: 0.5rem; }
+    .list-social__item a.list-social__link{    padding: 0.5rem; }
 
     .footer__list-social{ margin-left: 1rem;}
 

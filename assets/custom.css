@@ -40,6 +40,8 @@ h3,.h3{font-size: 2rem; }
 
 .page-width{ max-width: 1440px; }
 
+.footer__copyright caption{ text-align: left;}
+
 
 .button {
     min-width: 272px;

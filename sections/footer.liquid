@@ -59,7 +59,27 @@
   footer logo
 {% endcomment %}
 
+
 {{ section.settings.footer_image | image_url: width: 760 }}
+
+
+<div class="footer-block__details-content footer-block-image {{ section.settings.footer_alignment }}">
+    {%- if section.settings.footer_image != blank -%}
+      {%- assign image_size_2x = section.settings.footer_image_width | times: 2 | at_most: 5760 -%}
+      <div
+        class="footer-block__image-wrapper"
+        style="max-width: min(100%, {{ section.settings.footer_image_width }}px);"
+      >
+        <img
+          srcset="{{ section.settings.footer_image | image_url: width: section.settings.footer_image_width }}, {{ section.settings.footer_image | image_url: width: image_size_2x }} 2x"
+          src="{{ section.settings.footer_image | image_url: width: 760 }}"
+          alt="{{ section.settings.footer_image.alt | escape }}"
+          loading="lazy"
+          width="{{ section.settings.footer_image.width }}"
+          height="{{ section.settings.footer_image.height }}"
+        >
+      </div>
+
 
 </div>
 

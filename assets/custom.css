@@ -30,13 +30,16 @@ white : #fff;
     height: 65px;
     opacity: 1!important;
     border:0!important;
-}
 
-.button--primary {
     background: #B3341C;
     opacity: 1!important;
     border: 0!important;
     color: #fff;
+    
+}
+
+.button--primary {
+  
 }
 
 .button--secondary{}

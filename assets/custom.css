@@ -74,7 +74,7 @@ text-transform: uppercase;
     text-transform: uppercase;
     color: #fff; font-family: Oswald, sans-serif;}
 
-
+    .header__heading-logo{ width: 32px; }
 
 @media screen and (min-width: 990px){
 .header {

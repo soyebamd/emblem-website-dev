@@ -111,14 +111,19 @@
 {% comment %}
   newsletter
 {% endcomment %}
+{%- if section.settings.show_social -%}
 
 {%- render 'social-icons' -%}
+{%- endif -%}
+
+{% comment %}
+  
 
 {%- if section.settings.show_social and has_social_icons -%}
 {%- render 'social-icons' -%}
 {%- endif -%}
 
-social
+social{% endcomment %}
 {%- if section.settings.newsletter_enable -%}
 <div class="footer-block__newsletter">
   {%- if section.settings.newsletter_heading != blank -%}

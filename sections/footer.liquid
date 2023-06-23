@@ -63,21 +63,7 @@
 
 
 
-
-
-{% assign footer_logo_width =  section.settings.footer_image_width %}
-
-
-
-<div class="footer-block__details-content footer-block-image {{ section.settings.footer_alignment }}">
-    {%- if section.settings.footer_image != blank -%}
-
-
-     
-    <img src="{{ section.settings.footer_image }}" alt="">
-
-        
-      </div>
+{{ section.settings.footer_image }}
 
 
 </div>

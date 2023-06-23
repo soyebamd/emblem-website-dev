@@ -139,7 +139,7 @@
   newsletter
 {% endcomment %}
 {%- if section.settings.show_social -%}
-
+<h2 class="footer-block__heading inline-richtext">FOLLOW EMBLEM</h2>
 {%- render 'social-icons' -%}
 {%- endif -%}
 
@@ -154,7 +154,7 @@ social{% endcomment %}
 {%- if section.settings.newsletter_enable -%}
 <div class="footer-block__newsletter">
   {%- if section.settings.newsletter_heading != blank -%}
-    <h2 class="footer-block__heading inline-richtext">{{ section.settings.newsletter_heading }}</h2>
+    
 
 
   {%- endif -%}
@@ -181,7 +181,7 @@ social{% endcomment %}
           {% elsif form.posted_successfully? %}
             aria-describedby="ContactFooter-success"
           {% endif %}
-          placeholder="{{ 'newsletter.label' | t }}"
+          placeholder="{{ section.settings.newsletter_heading }}"
           required
         >
         <label class="field__label" for="NewsletterForm--{{ section.id }}">

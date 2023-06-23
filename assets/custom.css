@@ -74,6 +74,18 @@ h3,.h3{font-size: 2rem; }
    display: none;
 }
 
+.footer-block__details-content { position: relative; }
+.footer-block__details-content:before {
+    content: '';
+    height: 88%;
+    width: 1px;
+    background: white;
+    position: absolute;
+    top: 50%;
+    left: -35px;
+    transform: translateY(-50%);
+}
+
 .policies li:before{ display: none;}
  
 .button {

@@ -145,13 +145,13 @@ text-transform: uppercase;
 }
 
 
-.newsletter-form__field-wrapper .field__label{     height: 52px; font-size: 14px;}
+.newsletter-form__field-wrapper .field__label{        color: #000; height: 52px; font-size: 14px;}
 
 
 .newsletter-form__field-wrapper .field__input {
    
     padding: 0;
-    height: 52px;
+    height: auto;
     background: #fff;
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;

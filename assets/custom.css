@@ -153,6 +153,8 @@ text-transform: uppercase;
 
 .newsletter-form__field-wrapper  .field:after{ display: none;} 
 
+.newsletter-form__field-wrapper  .field__input:focus{ box-shadow: none;}
+
 
 @media screen and (min-width: 990px){
 .header {

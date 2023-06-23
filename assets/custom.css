@@ -76,7 +76,7 @@ h3,.h3{font-size: 2rem; }
 
 .left-line { position: relative; }
 .left-line:before {
-    content: '';
+    content: ''; 
     height: 88%;
     width: 1px;
     background: white;

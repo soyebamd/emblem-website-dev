@@ -227,8 +227,6 @@ social{% endcomment %}
 
 </div>
 
-</div>
-<!-- end Custom Footer -->
 
 
 
@@ -238,29 +236,43 @@ social{% endcomment %}
 
 
 
-  {%- liquid
-    assign has_social_icons = true
-    if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
-      assign has_social_icons = false
-    endif
 
-    if settings.brand_image == blank and settings.brand_headline == blank and settings.brand_description == blank
-      assign brand_empty = true
-    endif
 
-    if section.blocks.size == 1 and section.blocks[0].type == 'brand_information' and brand_empty and has_social_icons == false and section.settings.newsletter_enable == false and section.settings.enable_follow_on_shop == false
-      assign only_empty_brand = true
-    endif
-  -%}
-  {%- if section.blocks.size > 0
-    or section.settings.newsletter_enable
-    or section.settings.show_social
-    or section.settings.enable_follow_on_shop
-  -%}
-    {%- unless only_empty_brand -%}
 
-    
-      <div class="footer__content-top page-width">
+
+
+
+
+
+
+
+
+{%- liquid
+assign has_social_icons = true
+if settings.social_facebook_link == blank and settings.social_instagram_link == blank and settings.social_youtube_link == blank and settings.social_tiktok_link == blank and settings.social_twitter_link == blank and settings.social_pinterest_link == blank and settings.social_snapchat_link == blank and settings.social_tumblr_link == blank and settings.social_vimeo_link == blank
+  assign has_social_icons = false
+endif
+
+if settings.brand_image == blank and settings.brand_headline == blank and settings.brand_description == blank
+  assign brand_empty = true
+endif
+
+if section.blocks.size == 1 and section.blocks[0].type == 'brand_information' and brand_empty and has_social_icons == false and section.settings.newsletter_enable == false and section.settings.enable_follow_on_shop == false
+  assign only_empty_brand = true
+endif
+-%}
+{%- if section.blocks.size > 0
+or section.settings.newsletter_enable
+or section.settings.show_social
+or section.settings.enable_follow_on_shop
+-%}
+{%- unless only_empty_brand -%}
+
+
+
+
+
+      
         {%- if section.blocks.size > 0 -%}
           {%- liquid
             if section.blocks.size == 9
@@ -396,9 +408,57 @@ social{% endcomment %}
           {%- endif -%}
 
         </div>
-      </div>
-    {%- endunless -%}
-  {%- endif -%}
+
+
+
+
+
+
+
+
+
+      {%- endunless -%}
+    {%- endif -%}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+<!-- end Custom Footer -->
+
+
+
+
+
+
+
+
+
+
+      
+
+--------------------------------------
+
 
   {% comment %}
     

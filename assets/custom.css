@@ -67,3 +67,17 @@ text-transform: uppercase;
 .button--secondary{}
 
 .button:after{ display: none; }
+
+
+
+.list-menu__item{font-size: 1.25rem;
+    text-transform: uppercase;
+    color: #fff; font-family: Oswald, sans-serif;}
+
+
+
+@media screen and (min-width: 990px){
+.header {
+    padding-top: .55rem;
+    padding-bottom: .55rem;
+}}

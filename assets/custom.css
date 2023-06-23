@@ -47,4 +47,4 @@ white : #fff;
 
 .button--secondary{}
 
-.button--primary:after{ display: none; }
+.button:after{ display: none; }

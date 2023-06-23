@@ -151,6 +151,8 @@ text-transform: uppercase;
 }
 
 
+.newsletter-form__field-wrapper  .field:after{ display: none;} 
+
 
 @media screen and (min-width: 990px){
 .header {

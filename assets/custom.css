@@ -186,7 +186,7 @@ text-transform: uppercase;
 
 .footer__content-top .list-menu__item{ line-height: 1em!important;}
 
-.footer__content-top  .list-social__item .icon{ font-size: 1.5em; }
+.footer__content-top  .list-social__item .icon{ width: 1.5em; height: auto; }
 
 
 @media screen and (min-width: 990px){

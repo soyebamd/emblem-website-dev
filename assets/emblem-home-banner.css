@@ -4,3 +4,20 @@ p{    font-size: 32px;
     margin: 22px 0 42px; }
 
     .home-banner__content { max-width: 840px; margin:3rem 0; }
+
+
+    
+
+.home-banner-cover{
+
+    background-color: #151415;
+    color: #fff;
+    position: relative;
+    background-image: url(//emblemathletic.shop/cdn/shop/files/home-banner.png?v=1687621264);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 760px;
+    
+    
+    }

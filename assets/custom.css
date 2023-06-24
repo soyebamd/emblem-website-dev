@@ -128,6 +128,8 @@ text-transform: uppercase;
 .footer__content-top .list-menu__item{font-size: 1.25rem;
      font-family: Lato, sans-serif;}
 
+     .footer__blocks-wrapper{     padding: 0 5rem; }
+
      .footer__content-top .newsletter-form__field-wrapper .field__input{ color: black;}
 
     .header__heading-logo{ width: 32px; }

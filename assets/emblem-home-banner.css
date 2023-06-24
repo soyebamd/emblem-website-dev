@@ -1,7 +1,4 @@
 
-p{    font-size: 32px;
-    line-height: 40px;
-    margin: 22px 0 42px; }
 
     .home-banner__content { max-width: 840px; margin:3rem 0; }
 
@@ -23,3 +20,7 @@ p{    font-size: 32px;
     }
 
     .home-banner-cover .grid__item{ min-height: 760px; }
+
+    .home-banner-cover p{ max-width: 660px;   font-size: 32px;
+        line-height: 40px;
+        margin: 22px 0 42px; }

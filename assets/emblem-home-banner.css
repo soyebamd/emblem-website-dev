@@ -17,7 +17,9 @@ p{    font-size: 32px;
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right;
-    min-height: 760px;
+   
     
     
     }
+
+    .home-banner-cover .grid__item{ min-height: 760px; }

@@ -23,6 +23,8 @@ white : #fff;
 
 .text-black {color:#000; }
 
+.mt-0{ margin-top:0; }
+
 .header__icon, .header__icon--cart .icon{ width:40px; height: auto;}
 
 html{ font-size: 100%; }

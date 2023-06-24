@@ -179,7 +179,7 @@ text-transform: uppercase;
 }
 
 
-.newsletter-form__field-wrapper{max-width: 31.5rem;}
+.newsletter-form__field-wrapper{max-width: 31.5rem!important;}
 .newsletter-form__field-wrapper .field__input {
    
     padding: 0;

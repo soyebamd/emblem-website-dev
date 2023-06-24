@@ -36,6 +36,12 @@ h2, .h2{ font-size: 3rem; }
 
 h3,.h3{font-size: 2rem; }
 
+.flex{ display: flex;}
+
+.align-items-center{ align-items: center; }
+
+.justify-content-center{ justify-content: center; }
+
 .text-uppercase { text-transform: uppercase;}
 
 .page-width{ max-width: 1440px; }

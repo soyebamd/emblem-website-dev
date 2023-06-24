@@ -154,20 +154,22 @@ text-transform: uppercase;
     font-size: 16px;
     line-height: 53px;
     min-height: 53px;
-
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
+    letter-spacing: normal;
+    padding: 0 2.5rem;
 
 }
 
 
-.footer__content-top  .newsletter-form__field-wrapper .field__label{        color: #000; height: 52px; font-size: 14px;}
+.footer__content-top  .newsletter-form__field-wrapper .field__label{        color: #000; opacity: 1; height: 52px; font-size: 14px;}
 
 .footer__content-top .newsletter-form__field-wrapper .field__input {
   
     padding: 0 2rem;
     font-size: 14px;
     text-transform: uppercase;
+    color: #000; opacity: 1; 
 }
 
 .footer__content-top .field__input:not(:placeholder-shown)~.field__label{
@@ -177,6 +179,7 @@ text-transform: uppercase;
 }
 
 
+.newsletter-form__field-wrapper{max-width: 31.5rem;}
 .newsletter-form__field-wrapper .field__input {
    
     padding: 0;
@@ -207,3 +210,10 @@ text-transform: uppercase;
     padding-top: .55rem;
     padding-bottom: .55rem;
 }}
+
+@media screen and (min-width: 750px){
+.newsletter-form {
+  
+    max-width: 33.2rem;
+}
+}

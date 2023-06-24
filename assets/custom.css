@@ -49,7 +49,7 @@ h3,.h3{font-size: 2rem; }
 .justify-content-right{ justify-content: right;}
 
 .m-auto{ margin:auto!important; }
-
+.ml-27{ margin-left: 27px;}
 .text-uppercase { text-transform: uppercase;}
 
 .page-width{ max-width: 1440px; }

@@ -44,6 +44,8 @@ h3,.h3{font-size: 2rem; }
 
 .justify-content-center{ justify-content: center; }
 
+.justify-content-right{ justify-content: right;}
+
 .m-auto{ margin:auto!important; }
 
 .text-uppercase { text-transform: uppercase;}

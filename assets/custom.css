@@ -38,6 +38,8 @@ h2, .h2{ font-size: 3rem; }
 
 h3,.h3{font-size: 2rem; }
 
+.img-fluid{ width: 100%;}
+
 .d-flex{ display: flex;}
 
 .align-items-center{ align-items: center; }

@@ -19,8 +19,12 @@
 
 
         <div class="banner__buttons banner__buttons--multiple">
-          <a href="/collections/all" class="button button--secondary">Shop all</a>
-          <a href="#" class="button button--primary">sdsds</a>
+          {% if section.settings.button_link_1 %}
+            <a href="{{section.settings.button_link_1}}" class="button button--secondary">{{ section.settingsbutton_text_1 }}</a>
+          {% endif %}
+          {% if section.settings.button_link_2 %}
+            <a href="{{section.settings.button_link_2}}" class="button button--primary">{{ section.settingsbutton_text_1 }}</a>
+          {% endif %}
         </div>
 
 
@@ -50,7 +54,42 @@
         "type": "image_picker",
         "id": "image",
         "label": "Pick a banner image"
+      },
+      {
+        "type": "text",
+        "id": "heading",
+        "default": "Heading here",
+        "label": "Heading"
+      },
+      {
+        "type": "text",
+        "id": "content",
+        "default": "Info here",
+        "label": "Text info"
+      },
+
+      {
+        "type": "url",
+        "id": "button_link_1",
+        "label": "Button link 1"
+      }, {
+        "type": "url",
+        "id": "button_link_2",
+        "label": "Button link 2"
+      }, {
+        "type": "text",
+        "id": "button_text_1",
+        "default": "Primary button text",
+        "label": "Button text"
+      }, {
+        "type": "text",
+        "id": "button_text_2",
+        "default": "Secondary button text",
+        "label": "Button text"
       }
+
+
+
     ],
 
 

@@ -1,9 +1,9 @@
 {{ 'emblem-home-banner.css' | asset_url | stylesheet_tag }}
 
+<div class="page-width" style="background-color:#151415; color:#fff; position:relative">
 
-<div style="background-color:#151415; color:#fff; position:relative" class="grid">
+  <div class="grid">
 
-  <div class="page-width">
     <div class="grid__item d-flex align-items-center">
 
 
@@ -28,14 +28,14 @@
       </div>
 
     </div>
-  </div>
 
-  <div class="grid__item">
-    <img src="{{ 'home-banner.png' | file_url }}" style="max-width:710px; float:right">
 
+    <div class="grid__item">
+      <img src="{{ 'home-banner.png' | file_url }}" style="max-width:710px; float:right">
+
+    </div>
   </div>
 </div>
-
 
 
 {% schema %}

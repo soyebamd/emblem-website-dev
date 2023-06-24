@@ -9,14 +9,20 @@
 
       <div class="home-banner__content ">
 
+        {% if section.settings.heading %}
+          <h1 class="text-white text-uppercase m-0">
 
-        <h1 class="text-white text-uppercase m-0">built for service.<br>
-          MADE IN AMERICA.
-        </h1>
+            {{ section.settings.heading }}
+          </h1>
 
-        <p>Purpose built performance wear designed for American military and first responders.
-        </p>
+        {% endif %}
 
+
+        {% if section.settings.content %}
+          <p>
+            {{ section.settings.content }}
+          </p>
+        {% endif %}
 
         <div class="banner__buttons banner__buttons--multiple">
           {% if section.settings.button_link_1 %}

@@ -42,7 +42,7 @@ h3,.h3{font-size: 2rem; }
 
 .footer__copyright caption{ text-align: left;}
 .footer__content-top {
-    padding: 4rem 0;
+    padding: 3rem 0;
   
 }
 
@@ -54,7 +54,7 @@ h3,.h3{font-size: 2rem; }
 }
 
 .copyright__content{
-    font-size: .875rem!important;
+    font-size: .8125rem!important;
 }
 
 .policies {
@@ -181,6 +181,8 @@ text-transform: uppercase;
     letter-spacing: .07rem;
     line-height: calc(1 + .4 / var(--font-body-scale));
 }
+
+footer {}
 
 
 @media screen and (min-width: 990px){

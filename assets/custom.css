@@ -42,7 +42,7 @@ h3,.h3{font-size: 2rem; }
 
 .footer__copyright caption{ text-align: left;}
 .footer__content-top {
-    padding: 3rem 0;
+    padding: 3rem 0!important;
   
 }
 
@@ -162,11 +162,11 @@ text-transform: uppercase;
 }
 
 
-.footer__content-top  .newsletter-form__field-wrapper .field__label{        color: #000; opacity: 1; height: 52px; font-size: 14px;}
+.footer__content-top  .newsletter-form__field-wrapper .field__label{    letter-spacing: normal;    color: #000; opacity: 1; height: 52px; font-size: 14px;}
 
 .footer__content-top .newsletter-form__field-wrapper .field__input {
   
-    padding: 0 2rem;
+    padding: 0 2rem; letter-spacing: normal; 
     font-size: 14px;
     text-transform: uppercase;
     color: #000; opacity: 1; 

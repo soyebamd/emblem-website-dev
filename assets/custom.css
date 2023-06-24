@@ -184,7 +184,9 @@ text-transform: uppercase;
     line-height: calc(1 + .4 / var(--font-body-scale));
 }
 
-footer {}
+.footer__content-top .list-menu__item{ line-height: 1em!important;}
+
+.footer__content-top  .list-social__item .icon{ font-size: 1.5em; }
 
 
 @media screen and (min-width: 990px){

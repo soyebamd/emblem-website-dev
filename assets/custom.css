@@ -104,7 +104,7 @@ h3,.h3{font-size: 2rem; }
  
 .button {
     min-width: 272px;
-    height: 65px;
+    min-height: 65px;
     opacity: 1!important;
     border:0!important;
 

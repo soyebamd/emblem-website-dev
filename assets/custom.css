@@ -219,6 +219,24 @@ text-transform: uppercase;
 .footer__content-top  .list-social__item .icon{ width: 1.5rem; height: auto; }
 
 
+
+.home-banner-cover{
+
+    background-color: #151415;
+    color: #fff;
+    position: relative;
+    background-image: url(//emblemathletic.shop/cdn/shop/files/home-banner.png?v=1687621264);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    min-height: 760px;
+    
+    
+    }
+
+    
+    
+
 @media screen and (min-width: 990px){
 .header {
     padding-top: .55rem;

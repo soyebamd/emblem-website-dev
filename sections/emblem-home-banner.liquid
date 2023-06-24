@@ -1,6 +1,6 @@
 {{ 'emblem-home-banner.css' | asset_url | stylesheet_tag }}
 
-<div style="background-color:#151415; color:#fff; position:relative">
+<div style="background-color:#151415; color:#fff; position:relative; background-image:url({{ section.settings.image | image_url }})">
 
   <div class="grid">
 
@@ -40,12 +40,14 @@
 
     </div>
 
-    <div class="grid__item">
+   {% comment %}
+    
+<div class="grid__item">
       <img
         src="{{ section.settings.image | image_url }}"
         style="max-width:710px; float:right"
         class="img-fluid">
-
+   {% endcomment %} 
     </div>
   </div>
 </div>

@@ -1,41 +1,43 @@
 {{ 'emblem-home-banner.css' | asset_url | stylesheet_tag }}
 
 
-<div style="background-color:#151415; color:#fff; position:relative" class="grid">
+<div class="page-width" style="background-color:#151415; color:#fff; position:relative">
 
-  <div class="grid__item d-flex align-items-center">
+  <div class="grid">
 
-
-    <div class="home-banner__content m-auto">
-
-
-      <h1 class="text-white text-uppercase mt-0">built for service.<br>
-        MADE IN AMERICA.
-      </h1>
-
-      <p>Purpose built performance wear designed for American military and first responders.
-      </p>
+    <div class="grid__item d-flex align-items-center">
 
 
-      <div class="banner__buttons banner__buttons--multiple">
-        <a href="/collections/all" class="button button--secondary">Shop all</a>
-        <a href="#" class="button button--primary">sdsds</a>
+      <div class="home-banner__content m-auto">
+
+
+        <h1 class="text-white text-uppercase mt-0">built for service.<br>
+          MADE IN AMERICA.
+        </h1>
+
+        <p>Purpose built performance wear designed for American military and first responders.
+        </p>
+
+
+        <div class="banner__buttons banner__buttons--multiple">
+          <a href="/collections/all" class="button button--secondary">Shop all</a>
+          <a href="#" class="button button--primary">sdsds</a>
+        </div>
+
+
+
       </div>
-
 
 
     </div>
 
+    <div class="grid__item">
+      <img src="{{ 'home-banner.png' | file_url }}" style="max-width:710px; float:right">
 
+    </div>
   </div>
 
-  <div class="grid__item">
-    <img src="{{ 'home-banner.png' | file_url }}" style="max-width:710px; float:right">
-
-  </div>
 </div>
-
-
 
 {% schema %}
   {

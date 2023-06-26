@@ -21,6 +21,6 @@
 
     .home-banner-cover .grid__item{ min-height: 760px; }
 
-    .home-banner-cover p{ max-width: 660px;   font-size: 32px;
-        line-height: 40px;
-        margin: 22px 0 42px; }
+    .home-banner-cover p{ max-width: 660px;   font-size: 2rem;
+        line-height: 2.5rem;
+        margin: 1.375rem 0 2.625rem; }

@@ -249,6 +249,16 @@ text-transform: uppercase;
     font-size: 1rem;
   }
 
+  .btn{display: flex;
+    width: 205px;
+    background:  #B3341C;
+    height: 42px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    flex-shrink: 0;}
+
   
 
 @media(max-width:1200px){

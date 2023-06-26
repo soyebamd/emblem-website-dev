@@ -321,11 +321,9 @@
         {%- endif -%}
 
         
-        Button link here
-
         
 
-        
+
         <div class="card__badge {{ settings.badge_position }}">
           {%- if card_product.available == false -%}
             <span
@@ -385,6 +383,11 @@
               <div class="caption-with-letter-spacing light">{{ 'products.product.vendor' | t }}</div>
             {%- endif -%}
             {% render 'price' %}
+
+
+            
+        Button link here
+
           </div>
         </div>
       </div>

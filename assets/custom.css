@@ -228,7 +228,10 @@ text-transform: uppercase;
 
 
 
-    
+.card__media{ height: 262px;}    
+
+
+
 
 @media(max-width:1200px){
 

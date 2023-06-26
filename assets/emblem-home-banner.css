@@ -1,6 +1,6 @@
 
 
-    .home-banner__content { max-width: 840px; margin:3rem 0; }
+    .home-banner__content { max-width: 52.5rem; margin:3rem 0; }
 
 
     
@@ -19,8 +19,8 @@
     
     }
 
-    .home-banner-cover .grid__item{ min-height: 760px; }
+    .home-banner-cover .grid__item{ min-height: 47.5rem; }
 
-    .home-banner-cover p{ max-width: 660px;   font-size: 2rem;
+    .home-banner-cover p{ max-width: 41.25rem;   font-size: 2rem;
         line-height: 2.5rem;
         margin: 1.375rem 0 2.625rem; }

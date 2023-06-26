@@ -229,8 +229,27 @@ text-transform: uppercase;
 
 
 .card-wrapper{
+
     background-color: white;
+    padding:3.12rem 1.5rem 2rem 1.5rem;
+
+
+
 }
+
+
+.price {
+    font-size: 1rem;
+   
+    color: rgb(var(--color-foreground));
+  }
+
+  .price--on-sale .price-item--regular {
+  
+    font-size: 1rem;
+  }
+
+  
 
 @media(max-width:1200px){
 

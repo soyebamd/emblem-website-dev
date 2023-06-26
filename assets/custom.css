@@ -42,10 +42,7 @@ h3,.h3{font-size: 2rem; }
 
 .img-fluid{ width: 100%;}
 
-.header {
-    padding-top: 1.25rem;
-    padding-bottom: 1.25rem;
-  }
+
 
 .d-flex{ display: flex;}
 
@@ -232,8 +229,8 @@ text-transform: uppercase;
 
 @media screen and (min-width: 990px){
 .header {
-    padding-top: .55rem;
-    padding-bottom: .55rem;
+    padding-top: .55rem!important;
+    padding-bottom: .55rem!important;
 }}
 
 @media screen and (min-width: 750px){

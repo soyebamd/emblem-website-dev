@@ -248,8 +248,18 @@ text-transform: uppercase;
 
         @media(max-width:750px){
 
+
+            
     
-            html{ font-size: 80%; }
+    html{ font-size: 80%; }
+
+
+            
+    .left-line::before {left: -10%;}
+
+    .footer__copyright.caption{ padding-right:10%; }
+    
+
             
             
             }
@@ -276,7 +286,7 @@ width: 100%;
 
 @media screen and (min-width: 990px){
 
-    
+
 
 .header {
     padding-top: .55rem!important;
@@ -293,5 +303,5 @@ width: 100%;
     padding: 0 2rem;
   }
 
-  
+
 }

@@ -229,12 +229,6 @@ text-transform: uppercase;
     html{ font-size: 100%; }
 }
 
-@media(min-width:1030px){
-    
-    html{ font-size: 90%; }
-
-}
-
 
 
 @media screen and (min-width: 990px){

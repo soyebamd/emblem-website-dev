@@ -238,13 +238,13 @@ text-transform: uppercase;
 }
 
 
-.price {
+.card-information .price {
     font-size: 1rem;
    
     color: rgb(var(--color-foreground));
   }
 
-  .price--on-sale .price-item--regular {
+ .card-information .price--on-sale .price-item--regular {
   
     font-size: 1rem;
   }

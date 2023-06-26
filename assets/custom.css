@@ -25,7 +25,7 @@ white : #fff;
 
 .mt-0{ margin-top:0; }
 
-.header__icon, .header__icon--cart .icon{ width:40px; height: auto;}
+.header__icon, .header__icon--cart .icon{ width:2.5rem; height: auto;}
 
 html{ font-size: 100%; }
 
@@ -146,7 +146,7 @@ text-transform: uppercase;
 
      .footer__content-top .newsletter-form__field-wrapper .field__input{ color: black;}
 
-    .header__heading-logo{ width: 32px; }
+    .header__heading-logo{ width: 2rem; }
 
 
     .social-icon-v{ display: flex;     margin-bottom: 20px; align-items: center; }

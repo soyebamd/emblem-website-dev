@@ -29,7 +29,7 @@ white : #fff;
 
 .header__icon, .header__icon--cart .icon{ width:2.5rem; height: auto;}
 
-html{ font-size: 100%; }
+
 
 body{ font-size: 1.25rem; }
 
@@ -225,6 +225,16 @@ text-transform: uppercase;
 
 
     
+@media(min-width:1200px){
+    html{ font-size: 100%; }
+}
+
+@media(min-width:1030px){
+    
+    html{ font-size: 90%; }
+
+}
+
 
 
 @media screen and (min-width: 990px){

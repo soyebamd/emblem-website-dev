@@ -223,13 +223,13 @@ text-transform: uppercase;
 .footer__content-top  .list-social__item .icon{ width: 1.5rem; height: auto; }
 
 
+html{ font-size: 90%; }
+
 
     
 @media(min-width:1200px){
     html{ font-size: 100%; }
 }
-
-
 
 @media screen and (min-width: 990px){
 .header {

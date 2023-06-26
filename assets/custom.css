@@ -246,6 +246,15 @@ text-transform: uppercase;
         
         }
 
+        @media(max-width:1100px){
+
+        
+    .footer__copyright.caption{ padding-right:10%; }
+    
+
+        }
+
+
         @media(max-width:750px){
 
 
@@ -256,9 +265,6 @@ text-transform: uppercase;
 
             
     .left-line::before {left: -10%;}
-
-    .footer__copyright.caption{ padding-right:10%; }
-    
 
             
             

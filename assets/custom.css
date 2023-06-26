@@ -223,7 +223,7 @@ text-transform: uppercase;
 .footer__content-top  .list-social__item .icon{ width: 1.5rem; height: auto; }
 
 
-html{ font-size: 90%; }
+html{ font-size: 76%; }
 
 
     
@@ -231,7 +231,17 @@ html{ font-size: 90%; }
     html{ font-size: 100%; }
 }
 
+
+
+    
+
+
 @media screen and (min-width: 990px){
+
+    
+html{ font-size: 86%; }
+
+
 .header {
     padding-top: .55rem!important;
     padding-bottom: .55rem!important;

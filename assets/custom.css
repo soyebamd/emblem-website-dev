@@ -29,7 +29,7 @@ white : #fff;
 
 html{ font-size: 100%; }
 
-body{ font-size: 1.2rem; }
+body{ font-size: 1.25rem; }
 
 
 h1, .h1{ font-size: 4rem; }
@@ -78,8 +78,8 @@ h3,.h3{font-size: 2rem; }
 
 .policies li:after {
     content: '|';
-    font-size: 14px;
-    line-height: 29px;
+    font-size: .875rem;
+    line-height: 1.812rem;
     padding: 0 8px;
 }
 
@@ -114,7 +114,7 @@ h3,.h3{font-size: 2rem; }
     color: #fff;
 
 
-font-size: 20px;
+font-size: 1.25rem;
 font-family: Oswald, sans-serif;
 text-transform: uppercase;
 
@@ -163,11 +163,11 @@ text-transform: uppercase;
 
 .newsletter-form__field-wrapper .button {
     min-width: auto;
-    height: 53px;
+    height: 3.3125rem;
     background: #B3341C;
-    font-size: 16px;
-    line-height: 53px;
-    min-height: 53px;
+    font-size: 1rem;
+    line-height: 3.3125rem;
+    min-height: 3.3125rem;
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     letter-spacing: normal;
@@ -181,7 +181,7 @@ text-transform: uppercase;
 .footer__content-top .newsletter-form__field-wrapper .field__input {
   
     padding: 0 2rem; letter-spacing: normal; 
-    font-size: 14px;
+    font-size: .875rem;
     text-transform: uppercase;
     color: #000; opacity: 1; 
 }

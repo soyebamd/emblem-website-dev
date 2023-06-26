@@ -288,4 +288,10 @@ width: 100%;
   
     max-width: 33.2rem;
 }
+
+.footer__blocks-wrapper {
+    padding: 0 2rem;
+  }
+
+  
 }

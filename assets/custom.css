@@ -31,6 +31,10 @@ white : #fff;
 
 
 
+html{ font-size: 100%; }
+
+
+
 body{ font-size: 1.25rem; }
 
 
@@ -223,24 +227,36 @@ text-transform: uppercase;
 .footer__content-top  .list-social__item .icon{ width: 1.5rem; height: auto; }
 
 
-html{ font-size: 76%; }
-
-
-    
-@media(min-width:1200px){
-    html{ font-size: 100%; }
-}
-
-
 
     
 
+@media(max-width:1200px){
+
+    
+    html{ font-size: 90%; }
+    
+    
+    }
+
+    @media(max-width:990){
+
+    
+        html{ font-size: 80%; }
+        
+        
+        }
+
+        @media(max-width:750){
+
+    
+            html{ font-size: 70%; }
+            
+            
+            }
 
 @media screen and (min-width: 990px){
 
     
-html{ font-size: 86%; }
-
 
 .header {
     padding-top: .55rem!important;

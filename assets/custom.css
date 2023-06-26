@@ -103,7 +103,7 @@ h3,.h3{font-size: 2rem; }
 .policies li:before{ display: none;}
  
 .button {
-    min-width: 272px;
+    min-width: 17rem;
     min-height: 4.0625rem;
     opacity: 1!important;
     border:0!important;

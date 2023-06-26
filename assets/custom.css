@@ -25,6 +25,8 @@ white : #fff;
 
 .mt-0{ margin-top:0; }
 
+
+
 .header__icon, .header__icon--cart .icon{ width:2.5rem; height: auto;}
 
 html{ font-size: 100%; }
@@ -39,6 +41,11 @@ h2, .h2{ font-size: 3rem; }
 h3,.h3{font-size: 2rem; }
 
 .img-fluid{ width: 100%;}
+
+.header {
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+  }
 
 .d-flex{ display: flex;}
 

@@ -241,7 +241,7 @@ text-transform: uppercase;
     @media(max-width:990px){
 
     
-        html{ font-size: 80%; }
+        html{ font-size: 85%; }
         
         
         }
@@ -249,10 +249,30 @@ text-transform: uppercase;
         @media(max-width:750px){
 
     
-            html{ font-size: 70%; }
+            html{ font-size: 80%; }
             
             
             }
+
+
+           
+
+
+            @media(max-width:560px){
+
+    
+                .banner__buttons .button {
+
+                    margin: 5px 0;
+max-width: 285px;
+width: 100%;
+
+                }
+                
+                
+                }
+
+
 
 @media screen and (min-width: 990px){
 

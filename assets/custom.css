@@ -249,18 +249,28 @@ text-transform: uppercase;
     font-size: 1rem;
   }
 
-  .btn{display: flex;
-    width: 205px;
-    background:  #B3341C;
-    height: 42px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    color: #fff;
-    font-size: 16px;
-font-family: Oswald;
+  .btn{
+    
+
+    display: flex;
+max-width: 205px;
+width: 100%;
+background: #B3341C;
+height: 42px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+color: #fff !important;
+font-size: 1rem;
 font-weight: 700;
-    flex-shrink: 0;}
+font-family: var(--font-heading-family);
+text-decoration: none;
+text-transform: uppercase;
+margin: 19px 0;
+  
+
+
+  }
 
   
 

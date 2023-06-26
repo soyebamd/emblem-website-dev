@@ -104,7 +104,7 @@ h3,.h3{font-size: 2rem; }
  
 .button {
     min-width: 272px;
-    min-height: 65px;
+    min-height: 4.0625rem;
     opacity: 1!important;
     border:0!important;
 
@@ -176,7 +176,7 @@ text-transform: uppercase;
 }
 
 
-.footer__content-top  .newsletter-form__field-wrapper .field__label{    letter-spacing: normal;    color: #000; opacity: 1; height: 52px; font-size: 14px;}
+.footer__content-top  .newsletter-form__field-wrapper .field__label{    letter-spacing: normal;    color: #000; opacity: 1; height: 3.25rem; font-size: 0.875rem;}
 
 .footer__content-top .newsletter-form__field-wrapper .field__input {
   

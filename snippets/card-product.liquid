@@ -155,7 +155,7 @@
               {{ card_product.title | escape }}
             </a>
           </h3>
-          <div class="card-information">dsfsdfds
+          <div class="card-information">
             {%- if show_vendor -%}
               <span class="visually-hidden">{{ 'accessibility.vendor' | t }}</span>
               <div class="caption-with-letter-spacing light">{{ card_product.vendor }}</div>
@@ -200,8 +200,14 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '' %}
+
+
           </div>
         </div>
+
+        Button link here
+
+        
         {%- if show_quick_add -%}
           <div class="quick-add no-js-hidden">
             {%- liquid

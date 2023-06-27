@@ -96,7 +96,7 @@
   z-index: -1;
 }
 
-.imageWidthText{ background-color: var(--gradient-background);}
+.imageWidthText{ background-color: var(--gradient-background)!important;} 
 
 .image-with-text:not(.image-with-text--overlap) .image-with-text__media-item:after {
   border-radius: var(--media-radius);

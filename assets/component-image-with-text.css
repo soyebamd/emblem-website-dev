@@ -343,7 +343,7 @@
 }
 
 .image-with-text__content > * + * {
-  margin-top: 2rem;
+  margin-top: 3rem;
 }
 
 .image-with-text__content > .image-with-text__text:empty ~ a {
@@ -371,7 +371,10 @@
 
 .image-with-text__heading {
   margin-bottom: 0;
+  
 }
+
+img+h2.image-with-text__heading{margin-top:0;}
 
 .image-with-text__text p {
   margin-top: 0;

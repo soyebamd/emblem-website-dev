@@ -378,6 +378,10 @@
   margin-bottom: 1rem;
 }
 
+.image-with-text__text ul{ margin:0; padding:0;}
+
+.image-with-text__text ul li{ list-style-image: url(https://cdn.shopify.com/s/files/1/2141/7697/files/check.svg?v=1688221936); }
+
 @media screen and (max-width: 749px) {
   .collapse-padding .image-with-text__grid .image-with-text__content {
     padding-left: 0;

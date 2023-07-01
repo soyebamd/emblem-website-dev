@@ -98,7 +98,7 @@
 
 
 
-.imageWidthText{ background-color: #000!important;} 
+.imageWidthText{ background-color: #151415!important;} 
 
 .image-with-text:not(.image-with-text--overlap) .image-with-text__media-item:after {
   border-radius: var(--media-radius);
@@ -338,7 +338,7 @@
 
 @media screen and (min-width: 990px) {
   .image-with-text__content {
-    padding: 1.5rem 3.8rem;
+    padding: 1.5rem 3.8rem 4rem;
   }
 }
 

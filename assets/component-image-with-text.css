@@ -175,6 +175,8 @@
 
   .image-with-text__grid .image-with-text__media-item:first-child{ max-width: 400px;  }
 
+  .image-with-text__grid span{ color:#B3341C; }
+
   .image-with-text__grid--reverse .image-with-text__content {
     margin-left: auto;
   }

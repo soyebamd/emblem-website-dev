@@ -64,7 +64,8 @@ h3,.h3{font-size: 2rem; }
 
 .footer__copyright caption{ text-align: left;}
 .footer__content-top {
-    padding: 3rem 0!important;
+    padding-top: 3rem!important;
+    padding-bottom: 3rem!important;
   
 }
 

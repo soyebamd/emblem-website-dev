@@ -338,7 +338,7 @@
 
 @media screen and (min-width: 990px) {
   .image-with-text__content {
-    padding: 6rem 7rem 7rem;
+    padding: 1.5rem 3.8rem;
   }
 }
 
@@ -390,6 +390,9 @@ img+h2.image-with-text__heading{margin-top:0;}
   font-size: 1.5rem;
 
   margin-bottom: 20px;
+
+  color:#fff;
+
 }
 
 @media screen and (max-width: 749px) {

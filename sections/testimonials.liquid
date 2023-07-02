@@ -5,11 +5,14 @@
 
 .testimonials{ background:#B3341C;}
 
+.testimonials .title-wrapper-with-link{ justify-content: center; }
 .multicolumn-card__info {
   padding: 2.5rem;
   background: #fff;
   color: #000;
 }
+
+.desc{ text-align:center; }
 
 .multicolumn-card__info h3{ color:#000; }
 
@@ -55,7 +58,7 @@
     {%- endunless -%}
 
 
-    <p> {{ section.settings.desc }} </p>
+    <p class="desc"> {{ section.settings.desc }} </p>
 
     
     <slider-component class="slider-mobile-gutter">

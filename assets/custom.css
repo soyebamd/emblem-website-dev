@@ -62,9 +62,13 @@ h3,.h3{font-size: 2rem; }
 .ml-27{ margin-left: 27px;}
 .text-uppercase { text-transform: uppercase;}
 
+.page-width{ max-width: calc(1440px); }
+
+
 .page-width-large{ max-width: calc(1440px + 10rem); }
 
-.page-width{ max-width: calc(1440px); }
+
+.page-width-large-header{ max-width: calc(1440px + 10rem -38px ); }
 
 
 .footer__copyright caption{ text-align: left;}

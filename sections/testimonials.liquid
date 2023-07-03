@@ -212,12 +212,12 @@ line-height: 22px;
                   <div class="rte line">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
-                  <a class="link animate-arrow" {% if block.settings.link == blank %}role="link"aria-disabled="true"{% else %}href="{{ block.settings.link }}"{% endif %}>
+                  <p class="link animate-arrow author">
                     {{- block.settings.link_label | escape -}}
                  {% comment %}
                   
                   <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span> {% endcomment %} 
-                  </a>
+                  </p>
                 {%- endif -%}
               </div>
             </div>

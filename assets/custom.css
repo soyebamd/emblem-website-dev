@@ -39,7 +39,7 @@ html{ font-size: 100%; }
 
 body{ font-size: 1.25rem; line-height: calc(1 + 0.4 / var(--font-body-scale)); }
 
-h1, h2, h3 h4, h5, h6{ letter-spacing: normal;}
+h1, h2, h3 h4, h5, h6{ letter-spacing: normal!important;}
 
 
 h1, .h1{ font-size: 4rem; }

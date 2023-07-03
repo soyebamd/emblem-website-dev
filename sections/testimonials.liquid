@@ -38,6 +38,36 @@ margin-bottom:1rem;
  
 }
 
+.multicolumn-card__info h3.inline-richtext
+{
+ 
+font-size: 1.125rem;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+line-height: 1.625rem;
+
+}
+
+.multicolumn-card__info p{
+
+
+font-size: 12px;
+font-weight: 500;
+line-height: 16.5px;
+
+}
+
+.multicolumn-card__info .link {
+
+color: #000;
+font-size: 14px;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;
+
+}
+
 
   .section-{{ section.id }}-padding {
    
@@ -151,6 +181,8 @@ margin-bottom:1rem;
                 </div>
               {%- endif -%}
               <div class="multicolumn-card__info">
+                {{'oi_double-quote-serif-left.svg' | file_url | img_tag }}
+                
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
@@ -202,6 +234,10 @@ margin-bottom:1rem;
           {{ section.settings.button_label | escape }}
         </a>
       {%- endif -%}
+
+      {{'stars.svg' | file_url | img_tag }}
+
+      
     </div>
   </div>
 </div>

@@ -65,10 +65,10 @@ h3,.h3{font-size: 2rem; }
 .page-width{ max-width: calc(1440px); }
 
 
-.page-width-large{ max-width: calc(1440px + 10rem); }
+.page-width-large{ max-width: calc(1440px + 10rem)!important; }
 
 
-.page-width-large-header{ max-width: calc(1440px + 10rem -38px ); }
+.page-width-large-header{ max-width: calc(1440px + 7.5rem )!important; }
 
 
 .footer__copyright caption{ text-align: left;}

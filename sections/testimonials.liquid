@@ -84,6 +84,13 @@ line-height: 22px;
 
 .quote{ margin-top:10px; }
 
+.author  {color: #000;
+font-size: 14px;
+font-family: 'Roboto', sans-serif;
+font-style: normal;
+font-weight: 700;
+line-height: 22px;}
+
 
   .section-{{ section.id }}-padding {
    
@@ -212,10 +219,10 @@ line-height: 22px;
                   <div class="rte line">{{ block.settings.text }}</div>
                 {%- endif -%}
                 {%- if block.settings.link_label != blank -%}
-                  <p class="link animate-arrow author">
+                  <p class="animate-arrow author">
                     {{- block.settings.link_label | escape -}}
                  {% comment %}
-                  
+                
                   <span class="icon-wrap">&nbsp;{% render 'icon-arrow' %}</span> {% endcomment %} 
                   </p>
                 {%- endif -%}

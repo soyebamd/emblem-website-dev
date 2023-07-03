@@ -45,6 +45,7 @@ font-size: 1.125rem;
 font-family: 'Roboto', sans-serif;
 font-weight: 500;
 line-height: 1.625rem;
+margin:2px 0 8px;
 
 }
 
@@ -68,11 +69,7 @@ line-height: 22px;
 
 }
 
-
-
-:root {
-    --grid-desktop-horizontal-spacing: 20px;
-  }
+.quote{ margin-top:10px; }
 
 
   .section-{{ section.id }}-padding {
@@ -187,13 +184,15 @@ line-height: 22px;
                 </div>
               {%- endif -%}
               <div class="multicolumn-card__info">
-                {{'oi_double-quote-serif-left.svg' | file_url | img_tag }}
+
+              <img src="{{'oi_double-quote-serif-left.svg' | file_url  }}" class="quote">
                 
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
 
-                {{'stars.svg' | file_url | img_tag }}
+                <img src="{{'stars.svg' | file_url | img_tag }}" class="stat">
+                
 
                 
                 {%- if block.settings.text != blank -%}

@@ -14,6 +14,8 @@
 .multicolumn.background-primary .multicolumn-card { background: #fff;
   color: #000;}
 
+  .title-sprite{ background-image:url(https://cdn.shopify.com/s/files/1/2141/7697/files/title-bg.svg?v=1688356939)}
+
 .desc{ text-align:center; }
 
 .multicolumn-card__info h3{ color:#000; }
@@ -44,7 +46,7 @@
 <div class="multicolumn color-{{ section.settings.color_scheme }} gradient{% unless section.settings.background_style == 'none' and settings.text_boxes_border_thickness > 0 or settings.text_boxes_shadow_opacity > 0 %} background-{{ section.settings.background_style }}{% endunless %}{% if section.settings.title == blank %} no-heading{% endif %}">
   <div class="page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" {% if settings.animations_reveal_on_scroll %}data-cascade{% endif %}>
     {%- unless section.settings.title == blank -%}
-      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin">
+      <div class="title-wrapper-with-link title-wrapper--self-padded-mobile title-wrapper--no-top-margin title-sprite">
         <h2 class="title inline-richtext {{ section.settings.heading_size }}">
           {{ section.settings.title }}
         </h2>

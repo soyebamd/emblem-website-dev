@@ -39,6 +39,8 @@ html{ font-size: 100%; }
 
 body{ font-size: 1.25rem; line-height: calc(1 + 0.4 / var(--font-body-scale)); }
 
+h1, h2, h3 h4, h5, h6{ letter-spacing: normal;}
+
 
 h1, .h1{ font-size: 4rem; }
 
@@ -123,6 +125,7 @@ h3,.h3{font-size: 2rem; }
     opacity: 1!important;
     border: 0!important;
     color: #fff;
+    letter-spacing: normal;
 
 
 font-size: 1.25rem;
@@ -270,6 +273,7 @@ font-family: var(--font-heading-family);
 text-decoration: none;
 text-transform: uppercase;
 margin: 19px 0;
+letter-spacing: normal;
   
 
 

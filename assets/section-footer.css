@@ -12,6 +12,8 @@
 }
 
 @media screen and (max-width: 749px) {
+
+
   .footer .grid {
     display: block;
   }
@@ -26,11 +28,11 @@
     margin-top: 0;
   }
 
-  .footer__content-top {
+  /* .footer__content-top {
     padding-bottom: 3rem;
     padding-left: calc(4rem / var(--font-body-scale));
     padding-right: calc(4rem / var(--font-body-scale));
-  }
+  } */
 }
 
 @media screen and (min-width: 750px) {
@@ -219,6 +221,19 @@
     On a small screen we want all the items to be centered
     because they will be stacked.
    */
+
+   .newsletter-form {
+  
+    align-items: start;
+  
+  }
+
+  .footer-block__details-content {
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+
   .footer-block--newsletter {
     display: flex;
     flex-direction: column;

@@ -112,7 +112,8 @@ h3,.h3{font-size: 2rem; }
    display: none;
 }
 
-.left-line { position: relative; }
+.left-line { position: relative;  padding-left: 30px;}
+
 .left-line:before {
     content: ''; 
     height: 88%;
@@ -120,7 +121,7 @@ h3,.h3{font-size: 2rem; }
     background: white;
     position: absolute;
     top: 50%;
-    left: -35px;
+    left: 0;
     transform: translateY(-50%);
 }
 

@@ -348,6 +348,14 @@ letter-spacing: normal;
         @media(max-width:750px){
 
 
+            .footer__content-top {
+                padding-top: 0rem!important;
+                padding-bottom: 0rem!important;
+              
+            }
+            
+
+
             
 
 

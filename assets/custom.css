@@ -400,3 +400,11 @@ width: 100%;
 
 
 }
+
+
+@media (max-width:550px){
+    .image-with-text__content {
+       
+        padding: 4rem calc(1rem / var(--font-body-scale)) 5rem;
+}
+}

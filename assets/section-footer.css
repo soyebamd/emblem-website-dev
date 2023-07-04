@@ -23,6 +23,7 @@
     margin: 4rem 0;
     width: 100%;
   }
+  .footer-block.grid__item:last-child{ margin-bottom: 0;}
 
   .footer-block.grid__item:first-child {
     margin-top: 0;

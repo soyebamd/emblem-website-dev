@@ -172,6 +172,14 @@ text-transform: uppercase;
 
      .footer__content-top .newsletter-form__field-wrapper .field__input{ color: black;}
 
+     .header__icons{
+
+        max-width: 120px;
+        justify-content: space-between;
+        width: 100%;
+     
+    }
+
     .header__heading-logo{ width: 2rem; }
 
 

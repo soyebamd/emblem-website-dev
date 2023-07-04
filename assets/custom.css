@@ -160,7 +160,7 @@ text-transform: uppercase;
 .btn-black{ background-color: #000!important; color: #fff!important;}
 
 
-.list-menu__item{font-size: 1.25rem;
+.footer-block__details-content .list-menu__item{font-size: 1.25rem;
     text-transform: uppercase;
     color: #fff!important; opacity: 1; font-family: Oswald, sans-serif; }
 

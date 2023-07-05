@@ -82,9 +82,6 @@ h3,.h3{font-size: 2rem; }
 }
 
 .header__inline-menu .list-menu a{ color:#fff; }
-.footer {
-    margin-top: 0!important;
-}
 
 .footer__copyright caption{ text-align: left;}
 .footer__content-top {
@@ -261,6 +258,9 @@ text-transform: uppercase;
 
 .footer__content-top  .list-social__item .icon{ width: 1.5rem; height: auto; }
 
+.footer {
+    margin-top: 0!important;
+}
 
 
 .card-wrapper{

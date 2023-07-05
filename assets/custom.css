@@ -82,7 +82,9 @@ h3,.h3{font-size: 2rem; }
 }
 
 .header__inline-menu .list-menu a{ color:#fff; }
-
+.footer {
+    margin-top: 0;
+}
 
 .footer__copyright caption{ text-align: left;}
 .footer__content-top {

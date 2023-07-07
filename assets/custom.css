@@ -432,7 +432,7 @@ aside#main-collection-filters .facets__form-vertical {
   height: 18px;
   flex-shrink: 0;
   margin-right: 15px;
-  background: #f5f5f5;
+  background-color: #f5f5f5;
 }
 
 .facet-checkbox .icon-checkmark {

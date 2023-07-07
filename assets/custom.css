@@ -446,7 +446,6 @@ aside#main-collection-filters .facets__form-vertical {
 
 .facets__item label,
 .facets__item input[type="checkbox"] {
-  color: #000;
   font-family: Lato;
   font-size: 14px;
   font-style: normal;

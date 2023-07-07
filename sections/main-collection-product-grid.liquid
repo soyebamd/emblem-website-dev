@@ -224,8 +224,10 @@
 
     variantOption.forEach( resetOptions => {
 
-    resetOptions.checked == false;
+    resetOptions.checked = false;
+    resetOptions.removeAttribute('checked');
 
+    
     })
 
     ProductSelector.forEach(containerProductSelector => {

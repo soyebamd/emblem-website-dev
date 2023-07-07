@@ -246,12 +246,28 @@
                     aria-haspopup="dialog"
                     aria-labelledby="{{ product_form_id }}-submit title-{{ section_id }}-{{ card_product.id }}"
                     aria-live="polite"
-                                       
+                    data-sold-out-message="true"
+                    {% if card_product.selected_or_first_available_variant.available == false %}
+                      disabled
+
+                      {% else %}
+
+                      disabled="false"
+
+                    {% endif %}
+
+                   
                   >
-                    
-              <span>   Choose Options </span> 
-
-
+                    <span>
+                      {%- if card_product.selected_or_first_available_variant.available -%}
+                        Choose Options
+                      {%- else -%}
+                        {{ 'products.product.sold_out' | t }}
+                      {%- endif -%}
+                    </span>
+                    <span class="sold-out-message hidden">
+                      {{ 'products.product.sold_out' | t }} test
+                    </span>
                     {%- if horizontal_quick_add -%}
                       <span class="icon-wrap">{% render 'icon-plus' %}</span>
                     {%- endif -%}

@@ -386,7 +386,7 @@ h3,
 aside#main-collection-filters {
 }
 
-.facets__form-vertical {
+aside#main-collection-filters .facets__form-vertical {
   display: flex;
   flex-direction: column;
   width: 14.375rem;

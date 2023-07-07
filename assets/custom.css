@@ -488,18 +488,15 @@ span.active-facets__button-inner {
 }
 
 .radio-button {
-  display: flex;
-
-  padding: 12px;
+  display: inline-flex;
+  padding: 10px;
   justify-content: center;
   align-items: center;
-
   border-radius: 30px;
   border: 2px solid #000;
-  margin: 13px;
-
+  margin: 4px 0;
   color: #000;
-  font-size: 24px;
+  font-size: 10px;
   font-style: normal;
   font-weight: 700;
   line-height: 129.7%;

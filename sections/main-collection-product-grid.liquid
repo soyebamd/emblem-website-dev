@@ -222,12 +222,17 @@
 
     disabledButtonDefault.addEventListener('click', function(){
 
+    
+    disabledButtonDefault.setAttribute('disabled', 'disabled');
+    
+
+
     variantOption.forEach( resetOptions => {
 
-    resetOptions.checked = false;
-    resetOptions.removeAttribute('checked');
+    //resetOptions.checked = false;
+    //resetOptions.removeAttribute('checked');
 
-    
+
     })
 
     ProductSelector.forEach(containerProductSelector => {

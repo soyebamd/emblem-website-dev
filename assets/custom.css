@@ -441,6 +441,11 @@ span.active-facets__button-inner {
   margin-right: 0 !important;
 }
 
+.active-facets__button-wrapper *,
+span.active-facets__button-inner {
+  font-size: 0.7rem !important;
+}
+
 .facet-checkbox {
   padding: 0.5rem 0 !important;
 }

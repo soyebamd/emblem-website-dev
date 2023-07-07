@@ -206,7 +206,7 @@
 
     variantOption.forEach(variantOptionValue => variantOptionValue.addEventListener('input', function(){
 
-   console.log(      this.parentNode );
+   console.log(     this.closest('form') );
 
     }))
 

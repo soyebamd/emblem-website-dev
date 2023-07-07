@@ -387,8 +387,6 @@ aside#main-collection-filters {
 }
 
 aside#main-collection-filters .facets__form-vertical {
-  display: flex;
-  flex-direction: column;
   width: 14.375rem;
 }
 

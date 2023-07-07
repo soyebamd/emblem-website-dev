@@ -220,7 +220,7 @@
                 {%- form 'product',
                   card_product,
                   id: product_form_id,
-                  class: 'form',
+                  class: 'ProductSelector_form',
                   novalidate: 'novalidate',
                   data-type: 'add-to-cart-form'
                 -%}
@@ -232,7 +232,7 @@
    
   {% for variant in card_product.variants %}
     <label>
-      <input type="radio" name="id" value="{{ variant.id }}">
+      <input type="radio" name="id" value="{{ variant.id }}" class="ProductSelector_variantOptionContainer">
       {{ variant.title }}
     </label>
   {% endfor %}

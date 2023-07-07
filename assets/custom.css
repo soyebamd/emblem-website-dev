@@ -427,7 +427,7 @@ aside#main-collection-filters .facets__form-vertical {
   text-transform: uppercase;
 }
 
-.facet-checkbox .facet-checkbox > svg {
+.facet-checkbox > svg {
   width: 18px;
   height: 18px;
   flex-shrink: 0;

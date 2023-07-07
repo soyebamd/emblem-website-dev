@@ -463,7 +463,7 @@ span.active-facets__button-inner {
   position: absolute;
   left: 0.2rem !important;
   z-index: 5;
-  top: 1.3rem !important;
+  top: 0.8rem !important;
   width: 0.8rem;
   height: auto;
 }

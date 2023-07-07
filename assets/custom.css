@@ -473,6 +473,10 @@ span.active-facets__button-inner {
   line-height: 129.7%;
 }
 
+.quick-add {
+  position: static;
+}
+
 .quick-add__submit {
   font-size: 16px;
   font-weight: normal;

@@ -450,9 +450,7 @@ aside#main-collection-filters .facets__form-vertical {
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
-}
-.facets__header-vertical {
-  font-size: 0.875rem;
+  line-height: 129.7%;
 }
 
 @media screen and (min-width: 750px) {

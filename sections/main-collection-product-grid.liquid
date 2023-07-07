@@ -214,8 +214,11 @@
     const variantCartButton = document.querySelectorAll('button.quick-add__submit');
 
     variantCartButton.forEach(disabledButtonDefault => { 
+
+
+
       
-    disabledButtonDefault.setAttribute('disabled', 'disabled');
+   
 
     disabledButtonDefault.addEventListener('click', function(){
 
@@ -230,6 +233,8 @@
 
 
     })
+
+    disabledButtonDefault.setAttribute('type', '');
     
     
     })
@@ -243,7 +248,7 @@
 
     this.closest('form.ProductSelector_form').querySelector('button.quick-add__submit span.labelText').innerText = 'Add to Cart';
 
-    this.closest('form.ProductSelector_form').querySelector('button.quick-add__submit').removeAttribute('disabled');
+    this.closest('form.ProductSelector_form').querySelector('button.quick-add__submit'). disabledButtonDefault.setAttribute('type', 'submit');
 
     }
 

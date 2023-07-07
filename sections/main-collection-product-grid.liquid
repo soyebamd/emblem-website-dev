@@ -236,6 +236,11 @@
 
     containerProductSelector.classList.add('fadeDownOutAnimation');
 
+    
+    this.closest('form.ProductSelector_form').querySelector('button.quick-add__submit span.labelText').innerText = 'Choose Options';
+
+    
+
     })
 
     
@@ -272,7 +277,7 @@
     this.parentNode.querySelector('.ProductSelector_variantOptionContainer').setAttribute('checked', 'checked');
 
 
-    
+
 
     if(this.checked == true){
 

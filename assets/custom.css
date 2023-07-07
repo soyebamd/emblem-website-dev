@@ -441,7 +441,8 @@ aside#main-collection-filters .facets__form-vertical {
   left: 0.2rem !important;
   z-index: 5;
   top: 1.2rem !important;
-  width: 0.7rem;
+  width: 0.8rem;
+  height: auto;
 }
 
 .facets__item label,

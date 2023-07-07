@@ -291,12 +291,12 @@
                   novalidate: 'novalidate',
                   data-type: 'add-to-cart-form'
                 -%}
-                  <input
+                  {% comment %} <input
                     type="hidden"
                     name="id"
                     value="{{ card_product.selected_or_first_available_variant.id }}"
                     disabled
-                  >
+                  > {% endcomment %}
                   <button
                     id="{{ product_form_id }}-submit"
                     type="submit"

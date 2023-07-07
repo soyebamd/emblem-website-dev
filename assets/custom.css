@@ -427,7 +427,13 @@ aside#main-collection-filters .facets__form-vertical {
   text-transform: uppercase;
 }
 
-.facet-checkbox > svg {
+.field__input,
+.customer .field input {
+  font-size: 14px !important;
+  padding: 0.8rem;
+}
+
+.facet-checkbox .facet-checkbox > svg {
   width: 18px;
   height: 18px;
   flex-shrink: 0;
@@ -444,14 +450,16 @@ aside#main-collection-filters .facets__form-vertical {
   width: 0.8rem;
 }
 
-.facets__item label,
-.facets__item input[type="checkbox"] {
-  color: #000;
+.facet-checkbox .facets__item label,
+.facet-checkbox .facets__item input[type="checkbox"] {
   font-family: Lato;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 129.7%;
+}
+.facets__header-vertical {
+  font-size: 0.875rem;
 }
 
 @media screen and (min-width: 750px) {

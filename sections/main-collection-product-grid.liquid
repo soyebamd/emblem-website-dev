@@ -237,9 +237,6 @@
     containerProductSelector.classList.add('fadeDownOutAnimation');
 
     
-    disabledButtonDefault.querySelector('span.labelText').innerText = 'Choose Options';
-
-    
 
     })
 
@@ -271,10 +268,10 @@
     variantOption.forEach(variantOptionValue => variantOptionValue.addEventListener('input', function(){
 
     
-    
+{% comment %}     
     this.parentNode.querySelector('.ProductSelector_variantOptionContainer').checked = true;
 
-    this.parentNode.querySelector('.ProductSelector_variantOptionContainer').setAttribute('checked', 'checked');
+    this.parentNode.querySelector('.ProductSelector_variantOptionContainer').setAttribute('checked', 'checked'); {% endcomment %}
 
 
 

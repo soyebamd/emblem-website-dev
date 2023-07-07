@@ -204,7 +204,11 @@
    
     const variantOption = document.querySelectorAll('.ProductSelector_variantOptionContainer');
 
-    console.log(variantOption);
+    variantOption.forEach(variantOptionValue => variantOptionValue.addEventListener('input', function(){
+
+          console.log(this)
+
+    }))
 
     
   </script>

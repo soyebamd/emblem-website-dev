@@ -222,10 +222,17 @@
 
     disabledButtonDefault.addEventListener('click', function(){
 
-    
-    ProductSelector.classList.remove('fadeInUpAnimation');
 
-    ProductSelector.classList.add('fadeDownOutAnimation');
+    ProductSelector.forEach(containerProductSelector => {
+
+
+    containerProductSelector.classList.remove('fadeInUpAnimation');
+
+    containerProductSelector.classList.add('fadeDownOutAnimation');
+
+    })
+
+    
 
 
 

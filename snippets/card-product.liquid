@@ -248,16 +248,10 @@
                     aria-live="polite"
                                        
                   >
-                    <span>
-                      {%- if card_product.selected_or_first_available_variant.available -%}
-                        Choose Options
-                      {%- else -%}
-                        {{ 'products.product.sold_out' | t }}
-                      {%- endif -%}
-                    </span>
-                    <span class="sold-out-message hidden">
-                      {{ 'products.product.sold_out' | t }} test
-                    </span>
+                    
+              <span>   Choose Options </span> 
+
+
                     {%- if horizontal_quick_add -%}
                       <span class="icon-wrap">{% render 'icon-plus' %}</span>
                     {%- endif -%}

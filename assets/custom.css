@@ -396,7 +396,7 @@ aside#main-collection-filters {
 }
 
 aside#main-collection-filters .facets__form-vertical {
-  width: 14.375rem;
+  width: calc(14.375rem - 54px);
 }
 
 .facets-container {

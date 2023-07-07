@@ -202,10 +202,9 @@
 {%- if section.settings.enable_quick_add -%}
    <script>
 
-   alert('v4')
+   alert('v3')
    
     const variantOption = document.querySelectorAll('.ProductSelector_variantOptionContainer');
-
 
 
     //setAttribute('disabled', 'disabled');
@@ -216,8 +215,6 @@
 
     this.closest('form.ProductSelector_form').querySelectorAll('button.quick-add__submit')[0].innerText = 'Add to Cart';
 
-    this.closest('form.ProductSelector_form').querySelectorAll('button.quick-add__submit')[0].removeAttribute('disabled');
-        
     }
 
 

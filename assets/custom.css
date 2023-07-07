@@ -487,6 +487,14 @@ span.active-facets__button-inner {
   display: none;
 }
 
+.custom-selection input {
+  display: none;
+}
+
+.custom-selection input:checked + span {
+  background-color: red;
+}
+
 .radio-button {
   display: inline-flex;
   padding: 10px;

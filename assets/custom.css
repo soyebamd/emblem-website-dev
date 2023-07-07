@@ -438,11 +438,11 @@ span.active-facets__button-inner {
 }
 
 .active-facets__button {
-  margin-right: 0;
+  margin-right: 0 !important;
 }
 
 .facet-checkbox {
-  padding: 0.5rem 0;
+  padding: 0.5rem 0 !important;
 }
 
 .facet-checkbox > svg {

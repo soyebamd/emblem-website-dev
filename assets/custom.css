@@ -510,6 +510,8 @@ span.active-facets__button-inner {
   font-weight: 700;
   line-height: 129.7%;
   text-transform: uppercase;
+  min-width: 51px;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 750px) {

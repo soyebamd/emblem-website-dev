@@ -394,6 +394,12 @@ aside#main-collection-filters .facets__form-vertical {
   width: 14.375rem;
 }
 
+.facets-container {
+  padding: 27px;
+  border-radius: 10px;
+  background: white;
+}
+
 @media screen and (min-width: 750px) {
   .facets-vertical .facets-wrapper {
     padding-right: 3.5625rem;

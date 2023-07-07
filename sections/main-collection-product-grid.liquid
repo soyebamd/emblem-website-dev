@@ -19,7 +19,7 @@
 
     console.log(variantOption);
 
-    
+
   </script>
 
 {%- endif -%}
@@ -204,6 +204,23 @@
     {% render 'mask-arch' %}
   {%- endif -%}
 </div>
+
+
+
+{%- if section.settings.enable_quick_add -%}
+   <script>
+   
+    const variantOption = document.querySelectorAll('.ProductSelector_variantOptionContainer');
+
+    console.log(variantOption);
+
+    
+  </script>
+
+{%- endif -%}
+
+
+
 
 {% schema %}
 {

@@ -349,7 +349,7 @@ h3,
 
 .card-wrapper {
   background-color: white;
-  padding: 2.18rem;
+  padding: 1.8rem;
   border-radius: 10px;
 }
 
@@ -358,13 +358,13 @@ h3,
 }
 
 .card-information .price {
-  font-size: 1rem;
+  font-size: 0.9rem;
 
   color: rgb(var(--color-foreground));
 }
 
 .card-information .price--on-sale .price-item--regular {
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 .btn {

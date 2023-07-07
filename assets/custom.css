@@ -444,8 +444,9 @@ aside#main-collection-filters .facets__form-vertical {
   width: 0.8rem;
 }
 
-.facet-checkbox .facets__item label,
-.facet-checkbox .facets__item input[type="checkbox"] {
+.facets__item label,
+.facets__item input[type="checkbox"] {
+  color: #000;
   font-family: Lato;
   font-size: 14px;
   font-style: normal;

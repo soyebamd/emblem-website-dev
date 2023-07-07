@@ -395,17 +395,13 @@ h3,
 aside#main-collection-filters {
 }
 
-aside#main-collection-filters .facets__form-vertical {
-  width: calc(14.375rem - 54px);
-}
-
 .active-facets__button-wrapper *,
 span.active-facets__button-inner {
   font-size: 0.7rem;
 }
 
 .facets-container {
-  padding: 27px;
+  padding: 20px;
   border-radius: 10px;
   background: white;
 }
@@ -487,6 +483,10 @@ span.active-facets__button-inner {
 @media screen and (min-width: 750px) {
   .facets-vertical .facets-wrapper {
     padding-right: 3.5625rem;
+  }
+
+  aside#main-collection-filters .facets__form-vertical {
+    width: calc(14.375rem - 20px);
   }
 }
 

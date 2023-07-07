@@ -427,12 +427,6 @@ aside#main-collection-filters .facets__form-vertical {
   text-transform: uppercase;
 }
 
-.field__input,
-.customer .field input {
-  font-size: 14px !important;
-  padding: 0.8rem;
-}
-
 .facet-checkbox .facet-checkbox > svg {
   width: 18px;
   height: 18px;

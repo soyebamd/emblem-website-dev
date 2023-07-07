@@ -249,7 +249,14 @@
                     data-sold-out-message="true"
                     {% if card_product.selected_or_first_available_variant.available == false %}
                       disabled
+
+                      {% else %}
+
+                      disabled="false"
+
                     {% endif %}
+
+                   
                   >
                     <span>
                       {%- if card_product.selected_or_first_available_variant.available -%}
@@ -291,12 +298,12 @@
                   novalidate: 'novalidate',
                   data-type: 'add-to-cart-form'
                 -%}
-                  {% comment %} <input
+                  <input
                     type="hidden"
                     name="id"
                     value="{{ card_product.selected_or_first_available_variant.id }}"
                     disabled
-                  > {% endcomment %}
+                  >
                   <button
                     id="{{ product_form_id }}-submit"
                     type="submit"

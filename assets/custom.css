@@ -400,6 +400,14 @@ aside#main-collection-filters .facets__form-vertical {
   background: white;
 }
 
+.active-facets__button--light .active-facets__button-inner {
+  color: #fff;
+  font-size: 12px;
+  font-family: Lato, sans-serif;
+  border: 0;
+  box-shadow: none;
+}
+
 @media screen and (min-width: 750px) {
   .facets-vertical .facets-wrapper {
     padding-right: 3.5625rem;

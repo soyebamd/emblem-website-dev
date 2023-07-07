@@ -202,9 +202,19 @@
 {%- if section.settings.enable_quick_add -%}
    <script>
 
-   alert('v4')
+   alert('v5')
    
     const variantOption = document.querySelectorAll('.ProductSelector_variantOptionContainer');
+
+    const variantCartButton = document.querySelectorAll('button.quick-add__submit');
+
+    variantCartButton.forEach(disabledButtonDefault => { disabledButtonDefault.setAttribute('disabled', 'disabled');
+    
+    disabledButtonDefault.innerText = 'ssss';
+    
+    })
+
+
 
 
     //setAttribute('disabled', 'disabled');
@@ -214,6 +224,9 @@
     if(this.checked == true){
 
     this.closest('form.ProductSelector_form').querySelector('button.quick-add__submit span.labelText').innerText = 'Add to Cart';
+
+    this.closest('form.ProductSelector_form').querySelector('button.quick-add__submit').removeAttribute('disabled');
+
 
     }
 

@@ -486,7 +486,7 @@ span.active-facets__button-inner {
   }
 
   aside#main-collection-filters .facets__form-vertical {
-    width: calc(14.375rem - 20px);
+    width: calc(13.375rem - 20px);
   }
 }
 

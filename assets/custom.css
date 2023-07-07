@@ -493,6 +493,7 @@ span.active-facets__button-inner {
 
 .custom-selection input:checked + span {
   background-color: #000;
+  color: #fff;
 }
 
 .radio-button {

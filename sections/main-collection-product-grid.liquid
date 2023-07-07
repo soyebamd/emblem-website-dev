@@ -207,11 +207,26 @@
    
     const variantOption = document.querySelectorAll('.ProductSelector_variantOptionContainer');
 
+    const ProductSelector = document.querySelectorAll('.ProductSelector');
+
+    
+
     const variantCartButton = document.querySelectorAll('button.quick-add__submit');
 
     variantCartButton.forEach(disabledButtonDefault => { 
       
     disabledButtonDefault.setAttribute('disabled', 'disabled');
+
+    disabledButtonDefault.addEventListener('click', function(){
+
+
+    this.closest('.ProductSelector').classList.remove('fadeDownOutAnimation');
+
+
+    this.closest('.ProductSelector').classList.add('fadeInUpAnimation');
+
+
+    })
     
     
     })
@@ -231,6 +246,11 @@
 
 
     }))
+
+
+    //add animation to button
+
+
 
     
   </script>

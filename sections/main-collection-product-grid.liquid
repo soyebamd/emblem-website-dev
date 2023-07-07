@@ -14,7 +14,16 @@
 
 
   <script>
-    alert('works')
+   
+    const variantOption = document.querySelectorAll('.ProductSelector_variantOptionContainer');
+
+    variantOption.forEach(getSelectedQuery => {getSelectedQuery.addEventListener('input', function(){
+
+    console.log(this);
+
+    })
+    })
+
   </script>
 
 {%- endif -%}

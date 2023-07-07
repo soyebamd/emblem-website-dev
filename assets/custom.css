@@ -349,7 +349,7 @@ h3,
 
 .card-wrapper {
   background-color: white;
-  padding: 2rem;
+  padding: 2.18rem;
   border-radius: 10px;
 }
 
@@ -457,6 +457,13 @@ aside#main-collection-filters .facets__form-vertical {
   font-style: normal;
   font-weight: 700;
   line-height: 129.7%;
+}
+
+.quick-add__submit {
+  font-size: 16px;
+  font-weight: normal;
+  min-height: 48px;
+  padding: 0;
 }
 
 @media screen and (min-width: 750px) {

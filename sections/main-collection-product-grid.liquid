@@ -216,7 +216,7 @@
     variantCartButton.forEach(disabledButtonDefault => { 
 
 
-
+    
       
    
 
@@ -234,7 +234,7 @@
 
     })
 
-    disabledButtonDefault.setAttribute('type', '');
+    disabledButtonDefault.setAttribute('disabled', 'disabled');
     
     
     })
@@ -248,7 +248,7 @@
 
     this.closest('form.ProductSelector_form').querySelector('button.quick-add__submit span.labelText').innerText = 'Add to Cart';
 
-    this.closest('form.ProductSelector_form').querySelector('button.quick-add__submit').disabledButtonDefault.setAttribute('type', 'submit');
+    this.closest('form.ProductSelector_form').querySelector('button.quick-add__submit').removeAttribute('disabled');
 
     }
 

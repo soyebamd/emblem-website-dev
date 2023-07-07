@@ -473,8 +473,12 @@ span.active-facets__button-inner {
   line-height: 129.7%;
 }
 
+.ProductSelector {
+  background-color: #fff;
+}
+
 .quick-add {
-  position: static;
+  position: static !important;
 }
 
 .quick-add__submit {

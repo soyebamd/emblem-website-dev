@@ -399,6 +399,11 @@ aside#main-collection-filters .facets__form-vertical {
   width: calc(14.375rem - 54px);
 }
 
+.active-facets__button-wrapper *,
+span.active-facets__button-inner {
+  font-size: 0.7rem;
+}
+
 .facets-container {
   padding: 27px;
   border-radius: 10px;
@@ -430,6 +435,14 @@ aside#main-collection-filters .facets__form-vertical {
   font-weight: 700;
   line-height: 129.7%;
   text-transform: uppercase;
+}
+
+.active-facets__button {
+  margin-right: 0;
+}
+
+.facet-checkbox {
+  padding: 0.5rem 0;
 }
 
 .facet-checkbox > svg {

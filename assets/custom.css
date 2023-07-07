@@ -384,8 +384,12 @@ h3,
 }
 
 aside#main-collection-filters {
-  width: 100%;
-  max-width: 230px;
+}
+
+.facets__form-vertical {
+  display: flex;
+  flex-direction: column;
+  width: 14.375rem;
 }
 
 @media screen and (min-width: 750px) {

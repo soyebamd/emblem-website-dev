@@ -250,12 +250,6 @@
     this.parentNode.querySelector('.ProductSelector').classList.add('fadeInUpAnimation');
 
     
-    this.parentNode.querySelector('.ProductSelector_variantOptionContainer').checked = true;
-
-    this.parentNode.querySelector('.ProductSelector_variantOptionContainer').setAttribute('checked', 'checked');
-
-
-    
 
 
 
@@ -270,6 +264,15 @@
     //setAttribute('disabled', 'disabled');
 
     variantOption.forEach(variantOptionValue => variantOptionValue.addEventListener('input', function(){
+
+    
+    
+    this.parentNode.querySelector('.ProductSelector_variantOptionContainer').checked = true;
+
+    this.parentNode.querySelector('.ProductSelector_variantOptionContainer').setAttribute('checked', 'checked');
+
+
+    
 
     if(this.checked == true){
 

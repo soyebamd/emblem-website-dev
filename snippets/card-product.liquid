@@ -230,6 +230,8 @@
 
                   
    <div class="ProductSelector">
+
+   <div class="ProductSelector__options">
   {% for variant in card_product.variants %}
     <label class="custom-selection">
       
@@ -240,7 +242,7 @@
     </label>
   {% endfor %}
   </div>
-                  
+  </div>        
                   <button
                     id="{{ product_form_id }}-submit"
                     type="submit"

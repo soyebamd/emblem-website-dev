@@ -202,19 +202,30 @@
 {%- if section.settings.enable_quick_add -%}
    <script>
 
-   alert('v1')
+   alert('v2')
    
     const variantOption = document.querySelectorAll('.ProductSelector_variantOptionContainer');
+
+    const variantCartButton = document.querySelectorAll('button.quick-add__submit');
+
+    variantCartButton.forEach(disabledButtonDefault ={ disabledButtonDefault.setAttribute('disabled', 'disabled');
+    
+    disabledButtonDefault.innerText = 'Choose Option';
+    
+    })
+
+    //setAttribute('disabled', 'disabled');
 
     variantOption.forEach(variantOptionValue => variantOptionValue.addEventListener('input', function(){
 
     if(this.checked == true){
 
-    this.closest('form.ProductSelector_form').querySelectorAll('button.quick-add__submit')[0].innerText = 'Add to Cart'
+    this.closest('form.ProductSelector_form').variantCartButton[0].innerText = 'Add to Cart';
 
-   console.log(     this.closest('form.ProductSelector_form') );
-
+    this.closest('form.ProductSelector_form').variantCartButton[0].removeAttribute('disabled');
+        
     }
+
 
     }))
 

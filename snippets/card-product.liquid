@@ -231,7 +231,8 @@
                   
    
   {% for variant in card_product.variants %}
-    <label>
+    <label class="custom-selection">
+      <span class="radio-button">{{ variant.title }}</span>
       <input type="radio" name="id" value="{{ variant.id }}" class="ProductSelector_variantOptionContainer">
       {{ variant.title }}
     </label>

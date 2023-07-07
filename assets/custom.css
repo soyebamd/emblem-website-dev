@@ -475,6 +475,7 @@ span.active-facets__button-inner {
 
 .ProductSelector {
   background-color: #fff;
+  position: absolute;
 }
 
 .quick-add {

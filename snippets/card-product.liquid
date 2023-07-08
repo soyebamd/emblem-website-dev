@@ -217,9 +217,6 @@
              
 
               <product-form>
-
-
-              
                 {%- form 'product',
                   card_product,
                   id: product_form_id,
@@ -227,10 +224,8 @@
                   novalidate: 'novalidate',
                   data-type: 'add-to-cart-form'
                 -%}
-               
+                 
 
-
-                
 
 
                   
@@ -247,7 +242,7 @@
     </label>
   {% endfor %}
   </div>
-        
+  </div>        
                   <button
                     id="{{ product_form_id }}-submit"
                     type="submit"
@@ -259,7 +254,7 @@
                                        
                   >
                     
-              <span class="labelText"> Add to Cart  </span>
+              <span class="labelText"> Choose Options  </span>
 
 
                     {%- if horizontal_quick_add -%}
@@ -277,15 +272,21 @@
                       </svg>
                     </div>
                   </button>
-                
-             
+                {%- endform -%}
+              </product-form>
 
               
              
              
             {%- else -%}
-            
-               
+              <product-form>
+                {%- form 'product',
+                  card_product,
+                  id: product_form_id,
+                  class: 'form',
+                  novalidate: 'novalidate',
+                  data-type: 'add-to-cart-form'
+                -%}
                   <input
                     type="hidden"
                     name="id"
@@ -330,25 +331,7 @@
                       </svg>
                     </div>
                   </button>
-
-                  </div>  
-                  
-                  
                 {%- endform -%}
-
-
-
-                <button
-               
-                class="button button--full-width button--secondary{% if horizontal_quick_add %} card--horizontal__quick-add{% endif %}"
-
-                id="select-option"
-             
-               
-              >
-Choose Option aaaaaaaaaaaaaaaaaa
-
-              </button>
               </product-form>
             {%- endif -%}
           </div>

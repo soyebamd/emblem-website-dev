@@ -28,9 +28,6 @@
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
   
 
-<h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
-  {{ 'product Type'  }}
-</h2>
 
 {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
@@ -113,7 +110,22 @@
                 {%- endfor -%}
               </div>
             {%- endif -%}
-retetertretretretret
+
+            
+            <details
+            
+            class="{% if filter_type == 'horizontal' %}disclosure-has-popup facets__disclosure{% else %} facets__disclosure-vertical{% endif %} js-filter"
+           
+          >
+
+            
+<h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
+  {{ 'product Type'  }}
+</h2>
+
+
+</details>
+
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>
             {% comment %} Filters for both horizontal and vertical filter {% endcomment %}
             {%- for filter in results.filters -%}

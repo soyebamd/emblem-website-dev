@@ -234,6 +234,8 @@
 
     containerProductSelector.classList.add('fadeDownOutAnimation');
 
+    containerProductSelector.classList.remove('z-9');
+
     })
 
     
@@ -246,6 +248,10 @@
     this.parentNode.querySelector('.ProductSelector').classList.remove('fadeDownOutAnimation');
 
     this.parentNode.querySelector('.ProductSelector').classList.add('fadeInUpAnimation');
+
+    
+    this.parentNode.querySelector('.ProductSelector').classList.add('z-9');
+
 
 
 

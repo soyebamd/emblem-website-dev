@@ -489,6 +489,9 @@ span.active-facets__button-inner {
   align-items: flex-start;
   text-align: center;
   flex-direction: column;
+}
+
+.z-9 {
   z-index: 9;
 }
 

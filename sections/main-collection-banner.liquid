@@ -13,6 +13,7 @@
     display: flex;
     justify-content: center;
     align-content: center;
+    margin-bottom: 60px;
   }
 
   .collection-hero__description * {
@@ -23,12 +24,25 @@
 
 <div
   class="custom-collection-banner"
-  style="background-image:url('{{ collection.image | image_url}}' )">
+  {%- if section.settings.show_collection_image and collection.image -%}style="background-image:url('{{ collection.image | image_url}}' )"{%- endif -%}>
 
 
-  <img
-    src="{{ section.settings.logo |  img_url: 'master' }}"
-    class="banner-logo">
+  {%- if section.settings.logo -%}
+
+
+    <img
+      src="{{ section.settings.logo |  img_url: 'master' }}"
+      class="banner-logo">
+
+  {%- endif -%}
+
+  <h1
+    class="collection-hero__title">
+    <span
+      class="visually-hidden">{{ 'sections.collection_template.title' | t }}:
+    </span>
+    {{- collection.title | escape -}}
+  </h1>
 
 
   {%- if section.settings.show_collection_description -%}

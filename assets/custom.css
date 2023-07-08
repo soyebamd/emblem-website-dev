@@ -530,7 +530,7 @@ span.active-facets__button-inner {
 .fadeInUpAnimation {
   animation-duration: 0.5s;
   animation-fill-mode: both;
-  opacity: 0;
+  opacity: 1;
   animation-name: fadeInUp;
 }
 

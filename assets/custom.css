@@ -207,10 +207,6 @@ h3,
   text-transform: uppercase;
 }
 
-.button:disabled {
-  cursor: pointer;
-}
-
 .button--primary {
   background: #fff !important;
   color: #000 !important;
@@ -489,6 +485,10 @@ span.active-facets__button-inner {
   align-items: flex-start;
   text-align: center;
   flex-direction: column;
+}
+
+.ProductSelector__options {
+  padding: 40px 16px;
 }
 
 .z-9 {

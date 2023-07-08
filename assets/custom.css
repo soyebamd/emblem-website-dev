@@ -218,7 +218,7 @@ h3,
 }
 
 .spinner circle {
-  stroke: #fff;
+  stroke: #fff !important;
 }
 
 .button:after {

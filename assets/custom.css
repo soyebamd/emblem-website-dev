@@ -408,6 +408,10 @@ h3,
 aside#main-collection-filters {
 }
 
+.custom-collection {
+  margin-top: 36px;
+}
+
 .active-facets__button-wrapper *,
 span.active-facets__button-inner {
   font-size: 0.7rem;

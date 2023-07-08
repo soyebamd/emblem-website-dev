@@ -211,6 +211,9 @@
                 assign qty_rules = true
               endif
             -%}
+
+
+
             {%- if card_product.variants.size > 1 or qty_rules -%}
 
 
@@ -242,7 +245,7 @@
     </label>
   {% endfor %}
   </div>
-  </div>        
+        
                   <button
                     id="{{ product_form_id }}-submit"
                     type="submit"
@@ -331,6 +334,11 @@
                       </svg>
                     </div>
                   </button>
+
+
+                  </div> 
+
+                  
                 {%- endform -%}
               </product-form>
             {%- endif -%}

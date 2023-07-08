@@ -412,6 +412,10 @@ aside#main-collection-filters {
   margin-top: 36px;
 }
 
+.custom-collection ul {
+  margin: 14px 0 26px;
+}
+
 .active-facets__button-wrapper *,
 span.active-facets__button-inner {
   font-size: 0.7rem;

@@ -212,6 +212,11 @@ h3,
   color: #000 !important;
 }
 
+.spinner {
+  width: 25px;
+  height: 25px;
+}
+
 .button:after {
   display: none;
 }

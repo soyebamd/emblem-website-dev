@@ -31,6 +31,14 @@
 
 {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
+
+    
+<h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
+  {{ 'product Type'  }}
+</h2>
+
+
+
       <form
         id="FacetFiltersForm"
         class="{% if filter_type == 'horizontal' %}facets__form{% else %}facets__form-vertical{% endif %}"
@@ -115,10 +123,6 @@
            
 
             
-<h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
-  {{ 'product Type'  }}
-</h2>
-
 
 
             <script src="{{ 'show-more.js' | asset_url }}" defer="defer"></script>

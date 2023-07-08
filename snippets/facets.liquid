@@ -13,7 +13,7 @@
 {% endcomment %}
 
 {{ 'component-show-more.css' | asset_url | stylesheet_tag }}
-Code here
+
 {%- liquid
   assign sort_by = results.sort_by | default: results.default_sort_by
   assign total_active_values = 0
@@ -26,7 +26,13 @@ Code here
 -%}
 
 <div class="facets-container{% if filter_type == 'drawer' %} facets-container-drawer{% endif %}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
-  {%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
+  
+
+<h2 class="facets__heading caption-large text-body" id="verticalTitle" tabindex="-1">
+  {{ 'product Type' | t }}
+</h2>
+
+{%- if filter_type == 'vertical' or filter_type == 'horizontal' -%}
     <facet-filters-form class="facets small-hide">
       <form
         id="FacetFiltersForm"

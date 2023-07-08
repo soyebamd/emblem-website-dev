@@ -531,11 +531,13 @@ span.active-facets__button-inner {
   position: static !important;
 }
 
-.quick-add__submit {
+.button--small {
   font-size: 16px;
   font-weight: normal;
   min-height: 48px;
   padding: 0;
+  width: 100%;
+  min-width: 0;
 }
 
 .custom-selection {

@@ -22,7 +22,7 @@
   style="background-image:url('{{ collection.image | image_url}}' )">
 
 
-  {{ section.settings.logo }}
+  {{ section.settings.logo | img_url: 'medium' }}
 
 
   {%- if section.settings.show_collection_description -%}

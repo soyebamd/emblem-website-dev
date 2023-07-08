@@ -207,7 +207,55 @@
    
     const variantOption = document.querySelectorAll('.ProductSelector_variantOptionContainer');
 
-    const ProductSelector = document.querySelectorAll('.button--quick-add');
+    const ProductSelector = document.querySelectorAll('.ProductSelector');
+
+    const buttonQuickAdd = document.querySelectorAll('.button--quick-add');
+
+
+    //diplay or hide options
+
+    buttonQuickAdd.forEach(buttonQuickAddContoller => {
+
+
+
+    buttonQuickAddContoller.addEventListener('click', function(){
+
+    variantOption.forEach( resetOptions => {
+
+    //resetOptions.checked = false;
+   // resetOptions.removeAttribute('checked');
+
+    })
+
+    ProductSelector.forEach(containerProductSelector => {
+
+
+    containerProductSelector.classList.remove('fadeInUpAnimation');
+
+    containerProductSelector.classList.add('fadeDownOutAnimation');
+
+    })
+
+    
+
+
+
+    console.log('works'+this);
+
+
+    this.parentNode.querySelector('.ProductSelector').classList.remove('fadeDownOutAnimation');
+
+    this.parentNode.querySelector('.ProductSelector').classList.add('fadeInUpAnimation');
+
+
+
+    })
+
+
+
+
+
+    }) 
 
     
 

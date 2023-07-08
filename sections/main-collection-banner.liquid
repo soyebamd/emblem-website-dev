@@ -20,6 +20,11 @@
 <div
   class="custom-collection-banner"
   style="background-image:url('{{ collection.image | image_url}}' )">
+
+
+  {{ section.settings.logo }}
+
+
   {%- if section.settings.show_collection_description -%}
     <div
       class="collection-hero__description rte">{{ collection.description }}</div>
@@ -32,15 +37,24 @@
     "name": "t:sections.main-collection-banner.name",
     "class": "section",
     "settings": [
+
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "logo Image",
+        "info": "logo Image"
+      },
       {
         "type": "paragraph",
         "content": "t:sections.main-collection-banner.settings.paragraph.content"
-      }, {
+      },
+      {
         "type": "checkbox",
         "id": "show_collection_description",
         "default": true,
         "label": "t:sections.main-collection-banner.settings.show_collection_description.label"
-      }, {
+      },
+      {
         "type": "checkbox",
         "id": "show_collection_image",
         "default": false,

@@ -212,12 +212,12 @@ h3,
   color: #000 !important;
 }
 
-.spinner {
+.product-grid li .spinner {
   width: 25px !important;
   height: 25px;
 }
 
-.spinner circle {
+.product-grid li .spinner circle {
   stroke: #fff !important;
 }
 

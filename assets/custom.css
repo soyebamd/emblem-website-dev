@@ -356,6 +356,10 @@ h3,
   margin-top: 0 !important;
 }
 
+.product-grid li {
+  overflow: hidden;
+}
+
 .card-wrapper {
   background-color: white;
   padding: 1.8rem;

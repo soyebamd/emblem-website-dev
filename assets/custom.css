@@ -535,19 +535,19 @@ span.active-facets__button-inner {
 
   to {
     transform: translate3d(0, 100%, 0);
-    opacity: 0.5;
+    opacity: 0;
   }
 }
 
 .fadeInUpAnimation {
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   animation-fill-mode: both;
-  opacity: 0.5;
+  opacity: 0;
   animation-name: fadeInUp;
 }
 
 .fadeDownOutAnimation {
-  animation-duration: 0.5s;
+  animation-duration: 0.3s;
   animation-fill-mode: both;
   opacity: 0;
   animation-name: fadeDownOut;

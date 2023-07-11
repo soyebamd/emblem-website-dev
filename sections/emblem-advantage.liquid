@@ -23,7 +23,7 @@
     top: 0;
     left: 0;
   }
-  .the img {
+  .hide-logo-text img {
     float: left;
   }
   .hide-logo-text em {
@@ -38,6 +38,7 @@
   .title {
     color: #fff;
     font-weight: normal;
+    display: inline-block;
   }
 {%- endstyle -%}
 
@@ -47,12 +48,13 @@
 
   <h1 class="title position-relative">
     <span class="the cursive">The</span>
-    <span class="hide-logo-text">
-      <em>Emblem</em>
-      {{ 'logo-v2.svg' | file_url | img_tag }}
-    </span>
-    <span class="adv cursive">Advantage</span>
-
+    <div class="d-flex">
+      <span class="hide-logo-text">
+        <em>Emblem</em>
+        {{ 'logo-v2.svg' | file_url | img_tag }}
+      </span>
+      <span class="adv cursive">Advantage</span>
+    </div>
   </h1>
 
 

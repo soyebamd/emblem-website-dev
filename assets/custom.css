@@ -86,12 +86,12 @@ ul {
 }
 
 ul li {
-  font-family: Lato;
   font-size: 20px;
   font-family: Lato;
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  position: relative;
 }
 .position-relative {
   position: relative !important;

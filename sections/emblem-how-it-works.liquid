@@ -6,7 +6,6 @@
   }
 
 
-
   .iphone-2 {
     width: 308px;
     position: absolute;
@@ -58,36 +57,36 @@
   }
 
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+    px;
   }
 
-  
+
   @media screen and (max-width:1220px) {
 
-  .iphone-1 {
-    width: 430px;
-   margin:auto;
-   display:block;
+    .iphone-1 {
+      width: 430px;
+      margin: auto;
+      display: block;
+    }
+
+
+    .iphone-2 {
+      width: 308px;
+      position: absolute;
+      top: 101px;
+      left: 0;
+    }
+
   }
 
 
-  .iphone-2 {
-    width: 308px;
-    position: absolute;
-    top: 101px;
-    left: 0;
-  }
-
-  }
-
-
-
-  
   @media screen and (max-width:1000px) {
 
 
-/* 
+    /* 
 
   .iphone-2 {
     width: 208px;
@@ -96,25 +95,22 @@
   } */
 
 
-  
-  .how-it-works__text-description {
-    padding: 23px 0;
-  }
-
+    .how-it-works__text-description {
+      padding: 23px 0;
+    }
 
 
   }
-
-
 
 
   @media screen and (min-width: 750px) {
 
 
-
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom }}
+      px;
     }
   }
 {%- endstyle -%}
@@ -153,7 +149,7 @@
               1
             </span>
 
-            <span>FILL OUT 2-MINUTE STYLE QUIZ<br>
+            <span>FILL OUT 2-MINUTE STYLE QUIZ<br class=" small-hide">
               AND SHARE YOUR LOGOS</span>
           </li>
 
@@ -163,7 +159,7 @@
             </span>
 
             <span>
-              APPROVE FREE CUSTOM DESIGNS<br>
+              APPROVE FREE CUSTOM DESIGNS<br class=" small-hide">
               FROM OUR GRAPHIC ART TEAM
 
             </span>
@@ -175,7 +171,7 @@
             </span>
 
             <span>
-              GET YOUR CUSTOM UNIT<br>
+              GET YOUR CUSTOM UNIT<br class=" small-hide">
               WEBSTORE, OPEN 24/7/365</span>
           </li>
 
@@ -185,7 +181,7 @@
             </span>
 
             <span>
-              PLACE ORDERS INDIVIDUALLY <br> OR BUY IN BULK - NO MOQs</span>
+              PLACE ORDERS INDIVIDUALLY <br class=" small-hide"> OR BUY IN BULK - NO MOQs</span>
           </li>
 
 

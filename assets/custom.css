@@ -78,7 +78,7 @@ h3,
 }
 
 .img-fluid {
-  width: 100%;
+  max-width: 100%;
 }
 
 .d-flex {

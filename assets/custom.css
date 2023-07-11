@@ -229,6 +229,10 @@ ul li {
   color: #000 !important;
 }
 
+.button--black {
+  background: #000 !important;
+}
+
 .product-grid li .spinner {
   width: 25px !important;
   height: 25px;

@@ -33,12 +33,16 @@
 
 .how-it-works{ background:#E8E8E8; }
 
+.how-it-works .button{ margin:35px 0;}
+
     .how-it-works__text-description{ padding:23px 70px; }
 
     .how-it-works__text-description li {
       list-style:none;
       margin: 37px 0;
     }
+
+    .how-it-works__text-description li span:last-child{ padding:8px 0;}
 
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;

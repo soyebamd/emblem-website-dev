@@ -30,7 +30,11 @@
     text-indent: -9999px;
     display: inline-block;
   }
-  .adv {}
+  .adv {
+    line-height: 42px;
+    font-size: 96px;
+    padding-left: 10px;
+  }
 
   .advangae {
     background: #151415;
@@ -48,13 +52,13 @@
 
   <h1 class="title position-relative">
     <span class="the cursive">The</span>
-    <div class="d-flex">
-      <span class="hide-logo-text">
-        <em>Emblem</em>
-        {{ 'logo-v2.svg' | file_url | img_tag }}
-      </span>
-      <span class="adv cursive">Advantage</span>
-    </div>
+
+    <span class="hide-logo-text">
+      <em>Emblem</em>
+      {{ 'logo-v2.svg' | file_url | img_tag }}
+    </span>
+    <span class="adv cursive">Advantage</span>
+
   </h1>
 
 

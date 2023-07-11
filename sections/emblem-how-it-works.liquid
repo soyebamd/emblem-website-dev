@@ -6,6 +6,7 @@
   }
 
 
+
   .iphone-2 {
     width: 308px;
     position: absolute;
@@ -57,58 +58,63 @@
   }
 
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
-    px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
-    px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
-
+  
   @media screen and (max-width:1220px) {
 
-    .iphone-1 {
-      width: 430px;
-      margin: auto;
-      display: block;
-    }
+  .iphone-1 {
+    width: 430px;
+   margin:auto;
+   display:block;
+  }
 
 
-    .iphone-2 {
-      width: 308px;
-      position: absolute;
-      top: 101px;
-      left: 0;
-    }
+  .iphone-2 {
+    width: 308px;
+    position: absolute;
+    top: 101px;
+    left: 0;
+  }
 
   }
 
 
+
+  
   @media screen and (max-width:1000px) {
 
 
-    .iphone-2 {
-      width: 208px;
 
 
-    }
+  .iphone-2 {
+    width: 208px;
+   
+    
+  }
 
 
-    .how-it-works__text-description {
-      padding: 23px 0;
-    }
+  
+  .how-it-works__text-description {
+    padding: 23px 0;
+  }
+
 
 
   }
+
+
 
 
   @media screen and (min-width: 750px) {
 
 
+
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}
-      px;
-      padding-bottom: {{ section.settings.padding_bottom }}
-      px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
 {%- endstyle -%}

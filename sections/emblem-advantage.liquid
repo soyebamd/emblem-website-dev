@@ -14,16 +14,26 @@
       px;
     }
   }
+
+
+  .the {}
+  .hide-logo-text em {
+    text-indent: -9999px;
+  }
+  .adv {}
 {%- endstyle -%}
 
 
-<div class="page-width  section-{{ section.id }}-padding">
+<div class="page-width  section-{{ section.id }}-padding bg-gray">
 
 
   <h1>
-    <span class="the">The</span>
-    <span class="hide-logo">Emblem</span>
-    <span class="adv">Advantage</span>
+    <span class="the cursive">The</span>
+    <span class="hide-logo">
+      <em>Emblem</em>
+      {{ 'footer-logo.svg' | file_url | img_tag }}
+    </span>
+    <span class="adv cursive">Advantage</span>
 
   </h1>
 

@@ -1,4 +1,11 @@
 {%- style -%}
+
+.iphone-1{
+  width:290px;
+}
+
+.iphone-2{width:203px; position:absolute}
+
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
@@ -18,9 +25,9 @@
     <div class="grid__item">
 
       <div class="how-it-works__img">
-        <img src="https://cdn.shopify.com/s/files/1/2141/7697/files/iPhone-12-Pro-1.png?v=1689068101" alt="" class="img-fluid" >
+        <img src="https://cdn.shopify.com/s/files/1/2141/7697/files/iPhone-12-Pro-1.png?v=1689068101" alt="" class="img-fluid iphone-1"  >
 
-        <img src="https://cdn.shopify.com/s/files/1/2141/7697/files/iPhone-12-Pro_480x480.png?v=1689068123" alt="" class="img-fluid" >
+        <img src="https://cdn.shopify.com/s/files/1/2141/7697/files/iPhone-12-Pro_480x480.png?v=1689068123" alt="" class="img-fluid iphone-2" >
         
       </div>
 

@@ -1,19 +1,22 @@
 {%- style -%}
-.iphone-1{
-  width:430px;    margin-left: 240px;
+  .iphone-1 {
+    width: 430px;
+    margin-left: 240px;
     margin-top: 0;
-}
+  }
 
-.iphone-2{    width: 308px;
+  .iphone-2 {
+    width: 308px;
     position: absolute;
     top: 101px;
-    left: 116px;}
+    left: 116px;
+  }
 
-    .circle {
+  .circle {
     position: relative;
-   
+
     float: left;
-    margin: 0 16px 0px 0;
+    margin: 0 16px 0 0;
     clear: both;
     display: flex;
     width: 66px;
@@ -29,20 +32,29 @@
     font-size: 32px;
     line-height: 129.7%;
     text-transform: uppercase;
-}
+  }
 
-.how-it-works{ background:#E8E8E8; }
+  .how-it-works {
+    background: #E8E8E8;
+  }
 
-.how-it-works .button{ margin:35px 0;}
+  .how-it-works .button {
+    margin: 35px 0;
+  }
 
-    .how-it-works__text-description{ padding:23px 70px; }
+  .how-it-works__text-description {
+    padding: 23px 70px;
+  }
 
-    .how-it-works__text-description li {
-      list-style:none;
-      margin: 24px 0;
-    }
+  .how-it-works__text-description li {
+    list-style: none;
+    margin: 24px 0;
+  }
 
-    .how-it-works__text-description li span:last-child{ padding:8px 0; display:inline-block;}
+  .how-it-works__text-description li span:last-child {
+    padding: 8px 0;
+    display: inline-block;
+  }
 
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
@@ -63,10 +75,16 @@
     <div class="grid__item">
 
       <div class="how-it-works__img position-relative">
-        <img src="https://cdn.shopify.com/s/files/1/2141/7697/files/iPhone-12-Pro-1.png?v=1689068101" alt="" class="img-fluid iphone-1"  >
+        <img
+          src="https://cdn.shopify.com/s/files/1/2141/7697/files/iPhone-12-Pro-1.png?v=1689068101"
+          alt=""
+          class="img-fluid iphone-1">
 
-        <img src="https://cdn.shopify.com/s/files/1/2141/7697/files/iPhone-12-Pro_480x480.png?v=1689068123" alt="" class="img-fluid iphone-2" >
-        
+        <img
+          src="https://cdn.shopify.com/s/files/1/2141/7697/files/iPhone-12-Pro_480x480.png?v=1689068123"
+          alt=""
+          class="img-fluid iphone-2">
+
       </div>
 
     </div>
@@ -82,37 +100,43 @@
 
           <li>
             <span class="circle">
-1
-          </span>
-          
-          <span>FILL OUT 2-MINUTE STYLE QUIZ<br>
-            AND SHARE YOUR LOGOS</span></li>
+              1
+            </span>
 
-          <li><span class="circle">
-2
-          </span>
+            <span>FILL OUT 2-MINUTE STYLE QUIZ<br>
+              AND SHARE YOUR LOGOS</span>
+          </li>
 
-          <span>
-            APPROVE FREE CUSTOM DESIGNS<br>
-            FROM OUR GRAPHIC ART TEAM
-            
-            </span></li>
+          <li>
+            <span class="circle">
+              2
+            </span>
 
-          <li>   <span class="circle">
-3
-          </span>
-          
-          <span>
-            GET YOUR CUSTOM UNIT<br>
-            WEBSTORE, OPEN 24/7/365</span></li>
+            <span>
+              APPROVE FREE CUSTOM DESIGNS<br>
+              FROM OUR GRAPHIC ART TEAM
 
-          <li>   <span class="circle">
-4
-          </span>
-          
-          <span>
-            PLACE ORDERS INDIVIDUALLY <br> OR BUY IN BULK - NO MOQs</span>
-            </li>
+            </span>
+          </li>
+
+          <li>
+            <span class="circle">
+              3
+            </span>
+
+            <span>
+              GET YOUR CUSTOM UNIT<br>
+              WEBSTORE, OPEN 24/7/365</span>
+          </li>
+
+          <li>
+            <span class="circle">
+              4
+            </span>
+
+            <span>
+              PLACE ORDERS INDIVIDUALLY <br> OR BUY IN BULK - NO MOQs</span>
+          </li>
 
 
         </ul>

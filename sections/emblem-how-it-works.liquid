@@ -26,7 +26,7 @@
     align-items: center;
     gap: 10px;
     background: #B3341C;
-    border-radius: 100px;
+    border-radius: 100%;
     color: #fff;
     font-family: Oswald, sans-serif;
     font-size: 32px;
@@ -49,8 +49,9 @@
   .how-it-works__text-description li {
     list-style: none;
     margin: 24px 0;
+
     display: flex;
-    display: flex;
+    font-size: 18px;
   }
 
   .how-it-works__text-description li span:last-child {
@@ -107,7 +108,9 @@
 
   @media screen and (min-width: 750px) {
 
-
+    .how-it-works__text-description li {
+      font-size: 20px;
+    }
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}
       px;

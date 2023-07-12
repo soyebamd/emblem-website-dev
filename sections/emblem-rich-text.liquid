@@ -96,12 +96,10 @@
   parallaxElements.forEach(wow=> {
 
 
-  var speed = parseFloat(wow.dataset.speed);
-
-  var yOffset = scrollPosition * speed;
+  var yOffset = scrollPosition * 10;
 
   
-  console.log(speed);
+  console.log(yOffset);
 
   wow.style.backgroundPositionY = -yOffset + 'px';
 

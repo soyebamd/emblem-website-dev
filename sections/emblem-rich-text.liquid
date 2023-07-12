@@ -23,7 +23,10 @@
   }
 
 
-  @media screen and (min-width: 750px) {
+  <script > window.addEventListener('scroll', function() { var parallaxElements = document.querySelectorAll('.parallax'); var scrollPosition = window.pageYOffset; parallaxElements.forEach(function(element) { var speed = parseFloat(element.dataset.speed); var yOffset = scrollPosition * speed; element.style.backgroundPositionY = -yOffset + 'px'; }); });
+
+
+  </script > @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}
       px;
@@ -88,7 +91,7 @@
   {
     "name": "Emblem Rich Text",
     "tag": "section",
-    "class": "section",
+    "class": "section parallax",
     "disabled_on": {
       "groups": ["header", "footer"]
     },

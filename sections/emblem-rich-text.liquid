@@ -93,15 +93,21 @@
   var parallaxElements = document.querySelectorAll('.parallax');
   var scrollPosition = window.pageYOffset;
 
-  parallaxElements.forEach(function(element) {
-    var speed = parseFloat(element.dataset.speed);
-    var yOffset = scrollPosition * speed;
+  parallaxElements.forEach(wow=> {
 
 
-    console.log(speed);
+  var speed = parseFloat(wow.dataset.speed);
 
-    element.style.backgroundPositionY = -yOffset + 'px';
-  });
+  var yOffset = scrollPosition * speed;
+
+  
+  console.log(speed);
+
+  element.style.backgroundPositionY = -yOffset + 'px';
+
+
+  })
+
 });
 
 </script>

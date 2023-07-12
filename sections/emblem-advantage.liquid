@@ -57,6 +57,10 @@
     line-height: normal;
   }
 
+  .advantage__list-items li:last-child {
+    margin: 0;
+  }
+
   .advantage__sprite img {
     width: 3.0625rem;
   }
@@ -84,6 +88,11 @@
 
 
   @media screen and (max-width: 750px) {
+
+
+    .row-gap-0-tablet-down {
+      row-gap: 0 !important;
+    }
 
     .advantage__footer {
       flex-direction: column !important;
@@ -115,7 +124,7 @@
   </h1>
 
 
-  <div class="grid grid--1-col grid--2-col-tablet">
+  <div class="grid grid--1-col grid--2-col-tablet row-gap-0-tablet-down">
     <div class="grid__item">
 
 

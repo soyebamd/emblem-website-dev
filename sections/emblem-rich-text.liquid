@@ -89,13 +89,16 @@
 <script>
     window.addEventListener('scroll', function() {
 
-    console.log('scroll')
+    
   var parallaxElements = document.querySelectorAll('.parallax');
   var scrollPosition = window.pageYOffset;
 
   parallaxElements.forEach(function(element) {
     var speed = parseFloat(element.dataset.speed);
-    var yOffset = scrollPosition * 10;
+    var yOffset = scrollPosition * speed;
+
+
+    console.log(yOffset);
 
     element.style.backgroundPositionY = -yOffset + 'px';
   });

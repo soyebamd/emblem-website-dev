@@ -122,10 +122,10 @@ ul {
   text-transform: uppercase;
 }
 
-/* Controling page width */
+/* Controling page width 
 .page-width {
   max-width: calc(1440px);
-}
+}*/
 
 .page-width-medium {
   max-width: calc(1080px + 10rem) !important;

@@ -25,7 +25,7 @@
 {%- endstyle -%}
 
 
-{{ section.settings.image_section | image_url }}
+{{ section.settings.image_section | asset_url }}
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
   <div class="rich-text content-container color-{{ section.settings.color_scheme }} gradient{% if section.settings.full_width %} rich-text--full-width content-container--full-width{% endif %} section-{{ section.id }}-padding">

@@ -42,23 +42,23 @@
           {%- case block.type -%}
             {%- when 'heading' -%}
             <h2
-              class="rich-text__heading rte inline-richtext {{ block.settings.heading_color }} {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              class="rich-text__heading rte inline-richtext  {{ block.settings.heading_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
               {{ block.shopify_attributes }}
-              {% if settings.animations_reveal_on_scroll %}data-cascadestyle="--animation-order: {{ forloop.index }};"{% endif %}>
+              {% if settings.animations_reveal_on_scroll %}data-cascadestyle="--animation-order: {{ forloop.index }};"{% endif %}style="color: {{ block.settings.heading_color }}">
               {{ block.settings.heading }}
             </h2>
             {%- when 'caption' -%}
             <p
-              class="rich-text__caption {{ block.settings.desc_color }} {{ block.settings.text_style }} {{ block.settings.text_style }}--{{ block.settings.text_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
+              class="rich-text__caption {{ block.settings.text_style }}--{{ block.settings.text_size }}{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
               {{ block.shopify_attributes }}
-              {% if settings.animations_reveal_on_scroll %}data-cascadestyle="--animation-order: {{ forloop.index }};"{% endif %}>
+              {% if settings.animations_reveal_on_scroll %}data-cascadestyle="--animation-order: {{ forloop.index }};"{% endif %}style="color:{{ block.settings.cap_color }}">
               {{ block.settings.caption | escape }}
             </p>
             {%- when 'text' -%}
             <div
               class="rich-text__text rte{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}"
               {{ block.shopify_attributes }}
-              {% if settings.animations_reveal_on_scroll %}data-cascadestyle="--animation-order: {{ forloop.index }};"{% endif %}>
+              {% if settings.animations_reveal_on_scroll %}data-cascadestyle="--animation-order: {{ forloop.index }};"{% endif %}style="color:{{ block.settings.desc_color }}">
               {{ block.settings.text }}
             </div>
             {%- when 'button' -%}
@@ -224,9 +224,9 @@
             "label": "t:sections.rich-text.blocks.caption.settings.text.label"
           }, {
             "type": "color",
-            "id": "desc_color",
+            "id": "cap_color",
             "default": "#fff",
-            "label": "text color"
+            "label": "Caption text color"
           }, {
             "type": "select",
             "id": "text_style",
@@ -265,7 +265,13 @@
         "name": "t:sections.rich-text.blocks.text.name",
         "limit": 3,
         "settings": [
+
           {
+            "type": "color",
+            "id": "desc_color",
+            "default": "#fff",
+            "label": "Description text color"
+          }, {
             "type": "richtext",
             "id": "text",
             "default": "<p>Share information about your brand with your customers. Describe a product, make announcements, or welcome customers to your store.</p>",

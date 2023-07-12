@@ -262,7 +262,7 @@ ul {
   font-family: Lato, sans-serif;
 }
 
-.footer__content-top .newsletter-form__field-wrapper .field__input {
+.newsletter-form__field-wrapper .field__input {
   color: black;
 }
 
@@ -316,7 +316,7 @@ ul {
   padding: 0 2.5rem;
 }
 
-.footer__content-top .newsletter-form__field-wrapper .field__label {
+.newsletter-form__field-wrapper .field__label {
   letter-spacing: normal;
   color: #000;
   opacity: 1;
@@ -324,7 +324,7 @@ ul {
   font-size: 0.875rem;
 }
 
-.footer__content-top .newsletter-form__field-wrapper .field__input {
+.newsletter-form__field-wrapper .field__input {
   padding: 0 2rem;
   letter-spacing: normal;
   font-size: 0.875rem;

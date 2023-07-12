@@ -7,17 +7,21 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
     px;
 
-    background-color: red;
-  }
+    background-image: url('{{ section.settings.image | image_url }}');
 
-  @media screen and (min-width: 750px) {
-    .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}
-      px;
-      padding-bottom: {{ section.settings.padding_bottom }}
-      px;
-    }
+    background-color: #{{ section.settings.color | image_url }}
+
+}
+
+
+@media screen and (min-width: 750px) {
+  .section-{{ section.id }}-padding {
+    padding-top: {{ section.settings.padding_top }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom }}
+    px;
   }
+}
 {%- endstyle -%}
 
 <div class="isolate{% unless section.settings.full_width %} page-width{% endunless %}">
@@ -79,6 +83,19 @@
       "groups": ["header", "footer"]
     },
     "settings": [
+
+      {
+        "type": "image_picker",
+        "id": "image",
+        "label": "Pick a banner image"
+      },
+
+      {
+        "type": "color",
+        "id": "color",
+        "label": "Pick a banner background color"
+      },
+
       {
         "type": "select",
         "id": "desktop_content_position",
@@ -115,14 +132,12 @@
         ],
         "default": "center",
         "label": "t:sections.rich-text.settings.content_alignment.label"
-      },
-      {
+      }, {
         "type": "color_scheme",
         "id": "color_scheme",
         "label": "t:sections.all.colors.label",
         "default": "background-1"
-      },
-      {
+      }, {
         "type": "checkbox",
         "id": "full_width",
         "default": true,

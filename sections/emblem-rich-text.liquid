@@ -22,21 +22,6 @@
 
   }
 
-<script>
-    window.addEventListener('scroll', function() {
-  var parallaxElements = document.querySelectorAll('.parallax');
-  var scrollPosition = window.pageYOffset;
-
-  parallaxElements.forEach(function(element) {
-    var speed = parseFloat(element.dataset.speed);
-    var yOffset = scrollPosition * 10;
-
-    element.style.backgroundPositionY = -yOffset + 'px';
-  });
-});
-
-</script>
-
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
@@ -98,6 +83,24 @@
     </div>
   </div>
 </div>
+
+
+
+<script>
+    window.addEventListener('scroll', function() {
+  var parallaxElements = document.querySelectorAll('.parallax');
+  var scrollPosition = window.pageYOffset;
+
+  parallaxElements.forEach(function(element) {
+    var speed = parseFloat(element.dataset.speed);
+    var yOffset = scrollPosition * 10;
+
+    element.style.backgroundPositionY = -yOffset + 'px';
+  });
+});
+
+</script>
+
 
 {% schema %}
   {

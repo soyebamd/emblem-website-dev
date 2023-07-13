@@ -544,6 +544,11 @@ span.active-facets__button-inner {
   z-index: 9;
 }
 
+.serach-form {
+  max-width: 610px;
+  margin: auto;
+}
+
 @keyframes fadeInUp {
   0% {
     transform: translate3d(0, 100%, 0);

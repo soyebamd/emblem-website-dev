@@ -43,6 +43,10 @@ white : #fff;
   margin-top: 0;
 }
 
+.text-center {
+  text-align: center !important;
+}
+
 .header__icon,
 .header__icon--cart .icon {
   width: 2.5rem;

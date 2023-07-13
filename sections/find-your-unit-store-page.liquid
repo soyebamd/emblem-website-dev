@@ -6,7 +6,9 @@
     padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
     background-color: #151415;
     color: #fff;
-    background-image:url({{'rocket-pointer.svg' | file_url  }})
+    background-image:url({{'rocket-pointer.svg' | file_url  }}) no-repeat;
+    
+    background-position: 18% 71%;
 
   }
 
@@ -115,6 +117,32 @@
     </div>
   </div>
 </section>
+
+<section class="past-clients">
+
+<div class="page-width">
+
+<h3 class="text-uppercase">Past Client</h3>
+
+<div class="past-clients__row">
+
+{{ '95th.svg' | file_url | img_tag }}
+
+{{ 'emblemsitelogos-40thBEB.svg' | file_url | img_tag }}
+
+{{ 'emblemsitelogos-hanfordSRT.svg' | file_url | img_tag }}
+
+{{ 'emblemsitelogos-45thIBCT.svg' | file_url | img_tag }}
+
+{{ 'emblemsitelogos-usarpac.svg' | file_url | img_tag }}
+
+</div>
+
+</div>
+
+</section>
+
+
 {% schema %}
   {
     "name": "t:sections.main-page.name",

@@ -2,44 +2,60 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+    px;
     background-color: #151415;
     color: #fff;
-    background-image:url({{'rocket-pointer.svg' | file_url  }}) no-repeat;
-    
+    background-image: url('{{'rocket-pointer.svg' | file_url }}') no-repeat;
+
     background-position: 18% 71%;
 
   }
 
-  .mb-38px  { margin-bottom:38px;  }
+  .mb-38px {
+    margin-bottom: 38px;
+  }
 
-  .find-grear p { margin:38px 0!important; }
+  .find-grear p {
+    margin: 30px 0 !important;
+  }
 
-  .find-store{ background:#fff;  }
+  .find-store {
+    background: #fff;
+  }
 
- .past-clients{  display:table; width:100%; padding:47px 0 67px }
+  .past-clients {
+    display: table;
+    width: 100%;
+    padding: 47px 0 67px
+  }
 
   .past-clients__row img {
     margin: 20px 40px;
-   
-}
+
+  }
 
   @media screen and (min-width: 750px) {
 
-  .past-clients__row img {
-    margin: 10px 70px;
-   
-}
+    .past-clients__row img {
+      margin: 10px 70px;
+
+    }
 
 
-.past-clients{   width:100%; padding:57px 0 77px }
-
+    .past-clients {
+      width: 100%;
+      padding: 57px 0 77px
+    }
 
 
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom }}
+      px;
     }
   }
 {%- endstyle -%}
@@ -140,25 +156,25 @@
 
 <section class="past-clients">
 
-<div class="page-width text-center">
+  <div class="page-width text-center">
 
-<h3 class="text-uppercase mt-0">Past Client</h3>
+    <h3 class="text-uppercase mt-0">Past Client</h3>
 
-<div class="past-clients__row">
+    <div class="past-clients__row">
 
-{{ '95th.svg' | file_url | img_tag }}
+      {{ '95th.svg' | file_url | img_tag }}
 
-{{ 'emblemsitelogos-40thBEB.svg' | file_url | img_tag }}
+      {{ 'emblemsitelogos-40thBEB.svg' | file_url | img_tag }}
 
-{{ 'emblemsitelogos-hanfordSRT.svg' | file_url | img_tag }}
+      {{ 'emblemsitelogos-hanfordSRT.svg' | file_url | img_tag }}
 
-{{ 'emblemsitelogos-45thIBCT.svg' | file_url | img_tag }}
+      {{ 'emblemsitelogos-45thIBCT.svg' | file_url | img_tag }}
 
-{{ 'emblemsitelogos-usarpac.svg' | file_url | img_tag }}
+      {{ 'emblemsitelogos-usarpac.svg' | file_url | img_tag }}
 
-</div>
+    </div>
 
-</div>
+  </div>
 
 </section>
 

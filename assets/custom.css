@@ -346,11 +346,10 @@ ul {
   text-transform: uppercase;
   color: #000;
   opacity: 1;
-}
-
-.newsletter-form__field-wrapper .field__input {
-  padding-right: 2rem;
-  padding-left: 2rem;
+  background: #fff;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  height: auto;
 }
 
 .footer__content-top .field__input:not(:placeholder-shown) ~ .field__label {
@@ -359,13 +358,6 @@ ul {
 
 .newsletter-form__field-wrapper {
   max-width: 31.5rem !important;
-}
-.newsletter-form__field-wrapper .field__input {
-  padding: 0;
-  height: auto;
-  background: #fff;
-  border-top-left-radius: 50px;
-  border-bottom-left-radius: 50px;
 }
 
 .newsletter-form__field-wrapper .field:after {

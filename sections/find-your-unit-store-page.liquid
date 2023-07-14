@@ -2,11 +2,13 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
+    px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
+    px;
     background-color: #151415;
     color: #fff;
-    background-image: url({{'rocket-pointer.svg' | file_url }}) no-repeat;
+    background-image: url('{{'rocket-pointer.svg' | file_url }}') no-repeat;
 
 
     background-position: 18% 71%;
@@ -51,8 +53,10 @@
 
 
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}px;
-      padding-bottom: {{ section.settings.padding_bottom }}px;
+      padding-top: {{ section.settings.padding_top }}
+      px;
+      padding-bottom: {{ section.settings.padding_bottom }}
+      px;
     }
   }
 {%- endstyle -%}
@@ -169,6 +173,15 @@
 
       {{ 'emblemsitelogos-usarpac.svg' | file_url | img_tag }}
 
+
+      {%- for block in section.blocks -%}
+
+
+        {{ block.settings.image_section | img_url: 'medium' }}
+
+
+      {%- endfor -%}
+
     </div>
 
   </div>
@@ -204,6 +217,22 @@
         "label": "t:sections.all.padding.padding_bottom",
         "default": 36
       }
+    ],
+    "blocks": [
+      {
+        "type": "heading",
+        "name": "Client Images",
+        "limit": 3,
+        "settings": [
+          {
+            "type": "image_picker",
+            "id": "image_section",
+            "label": "Pick a client logo image"
+          }
+        ]
+      }
     ]
+
+
   }
 {% endschema %}

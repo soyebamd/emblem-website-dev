@@ -320,6 +320,16 @@ ul {
   padding: 0 2.5rem;
 }
 
+.serach-form .newsletter-form__field-wrapper .button {
+  height: 4.6rem;
+}
+
+.serach-form .customer .field label {
+  font-size: 1.2rem;
+
+  top: calc(1.3rem + var(--inputs-border-width));
+}
+
 .newsletter-form__field-wrapper .field__label {
   letter-spacing: normal;
   color: #000;

@@ -14,6 +14,10 @@
 
   }
 
+  .pop-up__logo {
+    max-width: 300px;
+  }
+
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
       padding-top: {{ section.settings.padding_top }}
@@ -37,7 +41,9 @@
 
 
     <div class="pop-up">
-      {{ 'black-logo.png' | file_url | img_tag }}
+      <div class="pop-up__logo">
+        {{ 'black-logo.png' | file_url | img_tag }}
+      </div>
       <h3>Get Your Unit in Extraordinary Gear</h3>
       <p>Design custom high-performance apparel complete with your logo/insignia, custom text, fabric colors, and more. Then, get an easy-to-share shop link featuring your team’s design on our most popular products.</p>
       <p>

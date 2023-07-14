@@ -266,10 +266,6 @@ ul {
   font-family: Lato, sans-serif;
 }
 
-.newsletter-form__field-wrapper .field__input {
-  color: black;
-}
-
 .header__icons {
   max-width: 120px;
   justify-content: space-between;

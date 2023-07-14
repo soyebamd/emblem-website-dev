@@ -177,7 +177,7 @@
       {%- for block in section.blocks -%}
 
 
-        {{ block.settings.image_section | img_url: 'medium' }}
+        {{ block.settings.image_section | img_url: 'medium' | img_tag }}
 
 
       {%- endfor -%}
@@ -222,7 +222,7 @@
       {
         "type": "heading",
         "name": "Client Images",
-        "limit": 3,
+        "limit": 10,
         "settings": [
           {
             "type": "image_picker",

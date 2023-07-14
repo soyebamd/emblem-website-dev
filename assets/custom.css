@@ -69,7 +69,7 @@ body {
 }
 
 .lato {
-  font-family: var(--font-body-family);
+  font-family: var(--font-body-family) !important;
 }
 
 body.gradient {

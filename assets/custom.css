@@ -68,6 +68,10 @@ body {
   font-family: "Permanent Marker", cursive;
 }
 
+.lato {
+  font-family: var(--font-body-family);
+}
+
 body.gradient {
   background: #f5f5f5;
 }
@@ -251,6 +255,13 @@ ul {
 .btn-black {
   background-color: #000 !important;
   color: #fff !important;
+}
+
+.button-small {
+}
+
+.full-width {
+  width: 100%;
 }
 
 .footer-block__details-content .list-menu__item {

@@ -65,6 +65,12 @@
   .step-main-desc .button {
     margin: 22px 0;
   }
+
+  .arrow-red {
+    position: absolute;
+    left: -277px;
+    bottom: 109px;
+  }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
@@ -73,7 +79,10 @@
 
     <div class="pop-up">
 
-      <img src="https://cdn.shopify.com/s/files/1/2141/7697/files/vecteezy_pink-marker-highlighter-shapes-marks-strokes-pointers_15577672_1_Traced_480x480.svg?v=1689368313" alt="" />
+      <img
+        src="https://cdn.shopify.com/s/files/1/2141/7697/files/vecteezy_pink-marker-highlighter-shapes-marks-strokes-pointers_15577672_1_Traced_480x480.svg?v=1689368313"
+        alt=""
+        class="arrow-red" />
       <div class="pop-up__logo">
         {{ 'black-logo.png' | file_url | img_tag }}
       </div>

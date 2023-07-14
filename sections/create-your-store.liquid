@@ -15,7 +15,24 @@
   }
 
   .pop-up__logo img {
-    max-width: 300px;
+    max-width: 400px;
+  }
+
+  .pop-up__logo {
+    margin: 22px 0 0;
+  }
+
+  .step-main-title {
+    font-size: 27px;
+    margin: 8px 0;
+  }
+
+  .step-main-desc {
+    margin: 10px 0;
+  }
+
+  .step-main-desc .small {
+    font-size: 12px;
   }
 
 
@@ -33,16 +50,12 @@
     color: #000;
     text-align: center;
     max-width: 750px;
-    min-height: 570px;
-
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 3rem;
+    padding: 4.5rem;
     z-index: 9999;
-
-
   }
 {%- endstyle -%}
 
@@ -54,13 +67,14 @@
       <div class="pop-up__logo">
         {{ 'black-logo.png' | file_url | img_tag }}
       </div>
-      <h3 class="lato">Get Your Unit in Extraordinary Gear</h3>
-      <p>Design custom high-performance apparel complete with your logo/insignia, custom text, fabric colors, and more. Then, get an easy-to-share shop link featuring your team’s design on our most popular products.</p>
-      <p>
+      <h3 class="lato step-main-title">Get Your Unit in Extraordinary Gear</h3>
+      <div class="step-main-desc">
+        <p>Design custom high-performance apparel complete with your logo/insignia, custom text, fabric colors, and more. Then, get an easy-to-share shop link featuring your team’s design on our most popular products.</p>
+        <p></div>
         <small>12Questions</small>
       </p>
 
-      <a href='#' class="button button--black button-small full-width">Start</a>
+      <a href='#' class="button button--black button-small full-width lato">Start</a>
     </div>
 
 

@@ -258,6 +258,7 @@ ul {
 }
 
 .button-small {
+  min-height: 52px !important;
 }
 
 .full-width {

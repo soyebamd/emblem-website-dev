@@ -1215,10 +1215,15 @@
 
   <script>
 
-var elements = document.querySelectorAll('.collection-link');
+var checkbox_elements = document.querySelectorAll('.collection-link');
 
-elements.forEach(function(element) {
-  element.addEventListener('click', function() {
+checkbox_elements.forEach(function(checkbox_element) {
+  checkbox_element.addEventListener('click', function() {
+
+  checkbox_elements.removeAttribute('checked');
+
+  this.addAttribute('checked');
+
     var url = this.dataset.url;
     
     window.location.href = url;

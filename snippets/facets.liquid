@@ -1214,21 +1214,24 @@
 
 
   <script>
+    var checkbox_elements = document.querySelectorAll('.collection-link');
 
-var checkbox_elements = document.querySelectorAll('.collection-link');
-
-checkbox_elements.forEach(function(checkbox_element) {
-  checkbox_element.addEventListener('click', function() {
-
-  checkbox_elements.removeAttribute('checked');
-
-  this.addAttribute('checked');
-
-    var url = this.dataset.url;
+    checkbox_elements.forEach(function(checkbox_element) {
+      checkbox_element.addEventListener('click', function() {
     
-    window.location.href = url;
-  });
-});
-
+        // Uncheck all checkboxes
+        checkbox_elements.forEach(function(checkbox) {
+          checkbox.removeAttribute('checked');
+        });
+    
+        // Check the clicked checkbox
+        this.checked = true;
+    
+        var url = this.dataset.url;
+        
+        window.location.href = url;
+      });
+    });
+    
 
   </script>

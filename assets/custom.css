@@ -467,7 +467,7 @@ span.active-facets__button-inner {
 }
 
 .facets-footer {
-  margin: 30px 0;
+  margin: 30px 0 !important;
 }
 
 .active-facets__button--light .active-facets__button-inner {

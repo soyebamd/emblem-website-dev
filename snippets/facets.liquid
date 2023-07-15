@@ -87,7 +87,7 @@
   {% if link.current %}
  
   {% else %}
-  <a  href="{{ link.url }}">   <label for="HeaderMenu-{{ link.handle }}"> {{- link.title | escape -}} </label> </a>
+<label for="HeaderMenu-{{ link.handle }}" data-url="{{ link.url }}" class="collection-link"> {{- link.title | escape -}} </label>
  {% endif %}
 
 
@@ -1211,3 +1211,19 @@
 
 
   </div>
+
+
+  <script>
+
+var elements = document.querySelectorAll('.collection-link');
+
+elements.forEach(function(element) {
+  element.addEventListener('click', function() {
+    var url = this.dataset.url;
+    
+    window.location.href = url;
+  });
+});
+
+
+  </script>

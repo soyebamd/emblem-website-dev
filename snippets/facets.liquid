@@ -61,7 +61,7 @@
 
 
 
-                              <label for="HeaderMenu-{{ link.handle }}" class="facet-checkbox">
+                              <span  class="facet-checkbox">
 
 
                                 <input type="checkbox" name="{{ link.handle }}" value="1" 
@@ -87,13 +87,13 @@
   {% if link.current %}
  
   {% else %}
-  <a  href="{{ link.url }}">  <span aria-hidden="true">{{- link.title | escape -}}</span>  </a>
+  <a  href="{{ link.url }}">   <label for="HeaderMenu-{{ link.handle }}"> {{- link.title | escape -}} </label> </a>
  {% endif %}
 
 
 
                                
-                              </label>
+                              </span>
                             </li>
                             
 {% endfor %}

@@ -59,13 +59,14 @@
 
 {%- for link in section.settings.menu.links -%}
 
-  HeaderMenu-{{ link.handle }}
 
   {% if link.current %}
              {{ link.title }}
+             {% else %}
+             <a id="HeaderMenu-{{ link.handle }}" href="{{ link.url }}"> {{- link.title | escape -}} </a>
             {% endif %}
 
- <a href="{{ link.url }}"> {{- link.title | escape -}} </a>
+
 
 {%- endfor -%}
 

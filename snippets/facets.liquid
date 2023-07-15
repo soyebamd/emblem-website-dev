@@ -46,6 +46,8 @@
 <ul class=" list-unstyled no-js-hidden">
   
 
+{%- for link in section.settings.menu.links -%}
+
 <li class="list-menu__item facets__item">
 
 
@@ -57,25 +59,20 @@
 
 
 
-{%- for link in section.settings.menu.links -%}
 
 
+                              <label for="HeaderMenu-{{ link.handle }}" class="facet-checkbox">
+
+
+                                <input type="checkbox" name="{{ link.handle }}" value="1" id="HeaderMenu-{{ link.handle }}
+                                
+                                
   {% if link.current %}
-             {{ link.title }}
-             {% else %}
-             <a id="HeaderMenu-{{ link.handle }}" href="{{ link.url }}"> {{- link.title | escape -}} </a>
-            {% endif %}
-
-
-
-{%- endfor -%}
-
-
-
-                              <label for="Filter-filter.v.availability-1" class="facet-checkbox">
-
-
-                                <input type="checkbox" name="filter.v.availability" value="1" id="Filter-filter.v.availability-1">
+ Checked
+    
+ {% endif %}
+                                
+                                ">
 
                                 <svg width="1.6rem" height="1.6rem" viewBox="0 0 16 16" aria-hidden="true" focusable="false">
                                   <rect width="16" height="16" stroke="currentColor" fill="none" stroke-width="1"></rect>
@@ -85,12 +82,22 @@
                                   <path d="M1.5 3.5L2.83333 4.75L4.16667 6L9.5 1" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></path>
                                 </svg>
 
-                                <span aria-hidden="true">Shirts</span>
+                               
+
+                                
+  {% if link.current %}
+ 
+  {% else %}
+  <a  href="{{ link.url }}">  <span aria-hidden="true">{{- link.title | escape -}}</span>  </a>
+ {% endif %}
+
+
+
                                
                               </label>
                             </li>
                             
-
+{% endfor %}
 
 
 

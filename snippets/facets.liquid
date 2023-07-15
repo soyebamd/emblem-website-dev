@@ -85,7 +85,7 @@
 
                                 
   {% if link.current %}
- <span> {{- link.title | escape -}} </span>
+ <label> {{- link.title | escape -}} </label>
   {% else %}
 <label for="HeaderMenu-{{ link.handle }}" data-url="{{ link.url }}" class="collection-link"> {{- link.title | escape -}} </label>
  {% endif %}

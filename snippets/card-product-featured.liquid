@@ -22,6 +22,14 @@
 
 {{ 'component-rating.css' | asset_url | stylesheet_tag }}
 
+
+
+                
+<a href="{{ product.url }}" class="button button--quick-add button--small button--full-width button--secondary" >
+    SHOP ALL COLORS   </a>
+
+
+    
 {%- if card_product and card_product != empty -%}
   {%- liquid
     assign ratio = 1
@@ -104,8 +112,8 @@
         <div class="card__content">
           <div class="card__information">
 
-          dfsdfsd
           
+
             <h3
               class="card__heading"
               {% if card_product.featured_media == null and settings.card_style == 'standard' %}
@@ -119,10 +127,6 @@
                 aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
               >
                 {{ card_product.title | escape }}sdfsdf
-
-                
-  <a href="{{ product.url }}" class="button button--quick-add button--small button--full-width button--secondary" >
-    SHOP ALL COLORS   </a>
 
               </a>
             </h3>

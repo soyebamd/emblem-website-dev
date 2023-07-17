@@ -1620,3 +1620,9 @@ a.product__text {
 
 
 .product-form__input input[type=radio]+label{padding: 10px; font-size: 1rem; letter-spacing: .03rem;}
+
+.quantity__input {
+    
+  font-size: 1rem;
+
+}

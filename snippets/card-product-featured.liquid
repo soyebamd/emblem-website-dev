@@ -116,6 +116,11 @@
                 aria-labelledby="StandardCardNoMediaLink-{{ section_id }}-{{ card_product.id }} NoMediaStandardBadge-{{ section_id }}-{{ card_product.id }}"
               >
                 {{ card_product.title | escape }}
+
+                
+  <a href="{{ product.url }}" class="button button--quick-add button--small button--full-width button--secondary" >
+    SHOP ALL COLORS   </a>
+
               </a>
             </h3>
           </div>
@@ -377,11 +382,8 @@
             {% render 'price' %}
 
             
-  <a href="{{ product.url }}" class="button button--quick-add button--small button--full-width button--secondary" >
-    SHOP ALL COLORS   </a>
 
 
-    
           </div>
 
         </div>

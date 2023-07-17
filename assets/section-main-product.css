@@ -387,6 +387,19 @@ a.product__text {
 
 .btn-square{ border-radius: 0!important;}
 
+.info-blocks{ padding:132px 0; background-color: #F3F3F3;}
+.img-wrapper {
+  height: 120px;
+  width: auto;
+  display: flex;
+  justify-content: center;
+  
+  align-items: center;
+}
+
+.img-wrapper h3{font-size: 22px;
+  margin: 0;}
+
 @media screen and (min-width: 750px) {
   .product__info-container {
     max-width: 60rem;

@@ -385,6 +385,9 @@ a.product__text {
   color:#B3341C;
 }
 
+.main-product{ background-color: #fff; }
+
+
 .btn-square{ border-radius: 0!important;}
 
 .info-blocks{ padding:132px 0; background-color: #F3F3F3;}

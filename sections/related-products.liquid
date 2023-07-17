@@ -5,6 +5,9 @@
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
+
+{% if recommendations.performed and recommendations.products_count > 0 %}
+
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0  }}px;
@@ -15,15 +18,15 @@
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top  }}px;
+      padding-top: {{ section.settings.padding_top }}px;
 
-      padding-bottom: {{ section.settings.padding_bottom   }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
 
     }
   }
 {%- endstyle -%}
 
-
+{%- endif -%}
 <div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
   <product-recommendations class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}">
     {% if recommendations.performed and recommendations.products_count > 0 %}

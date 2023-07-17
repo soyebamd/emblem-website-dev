@@ -1623,12 +1623,12 @@ a.product__text {
 
 .quantity__input {
     
-  font-size: 1rem;
+  font-size: 1rem!important;
 
 }
 
 .quantity {
  
-  min-height: 40px;
+  min-height: 40px!important;
 
 }

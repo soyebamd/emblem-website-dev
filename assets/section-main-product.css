@@ -1630,5 +1630,10 @@ a.product__text {
 .quantity {
  
   min-height: 40px!important;
+  width: calc(9rem / var(--font-body-scale) + var(--inputs-border-width) * 2);
 
+}
+
+.quantity__button {
+  width: calc(2.5rem / var(--font-body-scale))!important;
 }

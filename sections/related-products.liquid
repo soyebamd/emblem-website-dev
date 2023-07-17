@@ -5,7 +5,7 @@
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
 
-{% if recommendations.products_count > 0 %} 1  {%- else-%} 2 {%- endif -%}
+{% if recommendations.products %} 1  {%- else-%} 2 {%- endif -%}
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0  }}px;

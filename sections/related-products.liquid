@@ -8,17 +8,21 @@
 
 {%- style -%}
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0  }}px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0  }}
+    px;
 
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0  }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0  }}
+    px;
 
   }
 
   @media screen and (min-width: 750px) {
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top  }}px;
+      padding-top: {{ section.settings.padding_top  }}
+      px;
 
-      padding-bottom: {{ section.settings.padding_bottom   }}px;
+      padding-bottom: {{ section.settings.padding_bottom   }}
+      px;
 
     }
   }
@@ -33,7 +37,7 @@
       <ul class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down" role="list">
         {% for recommendation in recommendations.products %}
           <li class="grid__item">
-            {% render 'card-product' 
+            {% render 'card-product-featured' 
              , card_product: recommendation,
              media_aspect_ratio: section.settings.image_ratio,
              image_shape: section.settings.image_shape,

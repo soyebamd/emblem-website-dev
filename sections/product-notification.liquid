@@ -3,7 +3,7 @@
   .text {
     color: #FFF;
     font-family: Oswald, sans-serif;
-    font-size: 32px;
+    font-size: 2rem;
     font-style: normal;
     font-weight: 700;
     line-height: 129.7%; /* 41.504px */
@@ -13,7 +13,10 @@
   @media(max-width:600px) {
 
     .product-notification {
-      padding: 15px 0;
+      padding: 20px 0;
+    }
+    .mt-2 {
+      margin: 20px 0 0;
     }
     .product-notification .d-flex {
       flex-direction: column;
@@ -35,7 +38,7 @@
 
     </div>
 
-    <a href="{{- section.settings.button_link -}}" class="button btn-black ">Get Started</a>
+    <a href="{{- section.settings.button_link -}}" class="button btn-black mt-2">Get Started</a>
 
   </div>
 

@@ -1637,3 +1637,5 @@ a.product__text {
 .quantity__button {
   width: calc(2.5rem / var(--font-body-scale))!important;
 }
+
+.product-notification{ min-height: 93px; background-color: #B3341C; text-align: center; }

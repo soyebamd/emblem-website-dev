@@ -1638,4 +1638,6 @@ a.product__text {
   width: calc(2.5rem / var(--font-body-scale))!important;
 }
 
-.product-notification{ min-height: 93px; background-color: #B3341C; text-align: center; }
+.product-notification{  background-color: #B3341C; text-align: center; }
+
+.product-notification .page-width{min-height: 93px;}

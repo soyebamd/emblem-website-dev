@@ -4,8 +4,8 @@
 {% if section.settings.image_shape == 'blob' %}
   {{ 'mask-blobs.css' | asset_url | stylesheet_tag }}
 {%- endif -%}
-
-{% if recommendations.products %} 1  {%- else-%} 2 {%- endif -%}
+{{ recommendations.products  }}
+{% if recommendations.products %} 22 {%- else-%} 2 {%- endif -%}
 {%- style -%}
   .section-{{ section.id }}-padding {
     padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0  }}px;

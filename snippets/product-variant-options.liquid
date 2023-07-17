@@ -59,7 +59,12 @@
         class="disabled"
       {% endif %}
     >
-    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}">
+    <label for="{{ section.id }}-{{ option.position }}-{{ forloop.index0 }}"
+    
+    
+  {%- if block.settings.picker_button_style == 'square' -%} class="btn-square" {%- endif -%}
+    
+    >
       {{ value -}}
       <span class="visually-hidden">{{ 'products.product.variant_sold_out_or_unavailable' | t }}</span>
     </label>

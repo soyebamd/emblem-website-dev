@@ -128,9 +128,6 @@
             </h3>
 
             
-                
-<a href="{{ card_product.url }}" class="button button--quick-add button--small button--full-width button--secondary" >
-    SHOP ALL COLORS   </a>
 
           </div>
           <div class="card__badge {{ settings.badge_position }}">
@@ -214,6 +211,13 @@
             {%- endif -%}
 
             {% render 'price', product: card_product, price_class: '' %}
+
+            
+                
+<a href="{{ card_product.url }}" class="button button--quick-add button--small button--full-width button--secondary" >
+    SHOP ALL COLORS   </a>
+
+    
           </div>
         </div>
         {%- if show_quick_add -%}

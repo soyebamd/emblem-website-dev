@@ -397,7 +397,7 @@ a.product__text {
   align-items: center;
 }
 
-.img-wrapper h3{font-size: 22px;
+.info-wrapper h3{font-size: 22px;
   margin: 0;}
 
 @media screen and (min-width: 750px) {

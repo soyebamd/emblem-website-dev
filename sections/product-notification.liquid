@@ -1,0 +1,58 @@
+<div class="product-notification">
+
+
+  <div class="page-width flex">
+
+
+    <div class="text">
+
+      {{- section.settings.text -}}
+
+    </div>
+
+    <a href="#" class="button">
+      {{- section.settings.menu -}}</a>
+
+  </div>
+
+
+</div>
+
+
+
+{% schema %}
+  {
+    "name": "Product Notification Bar",
+    "tag": "section",
+    "class": "section Notification-blocks",
+    "settings": [
+
+      {
+        "type": "header",
+        "content": "Product Notification"
+      }, {
+        "type": "text",
+        "id": "text",
+        "label": "Heading",
+        "default": "Quick links"
+      }, {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Menu"
+      }
+
+
+
+    ],
+
+    "presets": [
+      {
+        "name": "Info Blocks"
+
+      }
+    ]
+
+
+
+  }
+{% endschema %}

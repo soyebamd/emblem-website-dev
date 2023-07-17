@@ -385,6 +385,8 @@ a.product__text {
   color:#B3341C;
 }
 
+.btn-square{ border-radius: 0!important;}
+
 @media screen and (min-width: 750px) {
   .product__info-container {
     max-width: 60rem;

@@ -87,13 +87,13 @@
   {% if link.current %}
  <label> {{- link.title | escape -}} </label>
   {% else %}
+  {% comment %}
 <label for="HeaderMenu-{{ link.handle }}" data-url="{{ link.url }}" class="collection-link"> {{- link.title | escape -}} </label>
 
-{% comment %}
+
   https://emblemathletic.shop/search?q=shirts
 {% endcomment %}
 
-For Search Function - 
 
 <label for="HeaderMenu-{{ link.handle }}" data-url="
 

@@ -1244,7 +1244,6 @@ checkbox_elements.forEach(function(checkbox_element) {
 
  const collection_handle = '{{ collection.handle }}';
 
- alert(collection_handle);
 
     const url = this.dataset.url;
 
@@ -1256,9 +1255,14 @@ checkbox_elements.forEach(function(checkbox_element) {
 
   //  console.log(search_key);
 
+if(collection_handle){
+ window.location.href = url;
+}
 
- // window.location.href = url+search_tag+search_key;
-  });
+else{ window.location.href = url+search_tag+search_key; }
+
+
+ });
 });
 
 

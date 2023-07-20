@@ -39,7 +39,7 @@
 </h2>
 
 
-{{ collection.handle }}
+
 
 
 
@@ -90,14 +90,10 @@
  <label> {{- link.title | escape -}} </label>
   {% else %}
 
-
-
-  {% comment %}
+{% if {{ collection.handle }} %}
 <label for="HeaderMenu-{{ link.handle }}" data-url="{{ link.url }}" class="collection-link"> {{- link.title | escape -}} </label>
 
-
-  https://emblemathletic.shop/search?q=shirts
-{% endcomment %}
+{% else %}
 
 
 <label for="HeaderMenu-{{ link.handle }}" data-url="
@@ -114,7 +110,7 @@ class="collection-link"> {{- link.title | escape -}} </label>
 
 
 
-
+                    {% endif %}
 
 
 

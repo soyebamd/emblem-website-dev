@@ -8,3 +8,7 @@
 .button-show-less {
   margin-top: 1.5rem;
 }
+
+.small-hide{     width: 100%;
+  min-width: 100%;
+}

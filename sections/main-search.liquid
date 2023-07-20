@@ -68,9 +68,9 @@
     <div class="template-search__header page-width{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
       <h1 class="h2 center">
         {%- if search.performed -%}
-          {{- 'templates.search.title' | t -}}
+      asd    {{- 'templates.search.title' | t -}}
         {%- else -%}
-          {{- 'general.search.search' | t -}}
+      asd    {{- 'general.search.search' | t -}}
         {%- endif -%}
       </h1>
       <div class="template-search__search">
@@ -100,7 +100,7 @@
                       spellcheck="false"
                     {%- endif -%}
                   >
-                asd  <label class="field__label" for="Search-In-Template">{{ 'general.search.search' | t }}</label>
+                  <label class="field__label" for="Search-In-Template">{{ 'general.search.search' | t }}</label>
                   <input name="options[prefix]" type="hidden" value="last">
 
                   {%- if settings.predictive_search_enabled -%}

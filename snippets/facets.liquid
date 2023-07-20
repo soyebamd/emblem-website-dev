@@ -92,7 +92,7 @@
 
 
 
-<label for="HeaderMenu-{{ link.handle }}" data-url="
+<label for="HeaderMenu-{{ link.handle }}"  data-collection_url="{{ link.url }}" data-url="
 
 https://emblemathletic.shop/
 
@@ -1244,8 +1244,12 @@ checkbox_elements.forEach(function(checkbox_element) {
 
  const collection_handle = '{{ collection.handle }}';
 
+ const collection_url = this.dataset.collection_url;
+
 
     const url = this.dataset.url;
+
+
 
     const search_tag = 'search?q=';
 
@@ -1256,7 +1260,7 @@ checkbox_elements.forEach(function(checkbox_element) {
   //  console.log(search_key);
 
 if(collection_handle){
- window.location.href = url;
+ window.location.href = collection_url;
 }
 
 else{ window.location.href = url+search_tag+search_key; }

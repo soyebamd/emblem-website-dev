@@ -90,7 +90,7 @@
  <label> {{- link.title | escape -}} </label>
   {% else %}
 
-{% if {{ collection.handle }} %}
+{% if collection.handle %}
 <label for="HeaderMenu-{{ link.handle }}" data-url="{{ link.url }}" class="collection-link"> {{- link.title | escape -}} </label>
 
 {% else %}

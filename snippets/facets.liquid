@@ -1250,15 +1250,16 @@ checkbox_elements.forEach(function(checkbox_element) {
 
     const url = this.dataset.url;
 
+    const search_tag = 'search?q=';
+
     const search_key = this.dataset.search_key;
 
-    console.log(url);
+  //  console.log(url);
 
-    console.log(search_key);
+  //  console.log(search_key);
 
 
-    
-  //  window.location.href = url+search_key;
+  window.location.href = url+search_tag+search_key;
   });
 });
 

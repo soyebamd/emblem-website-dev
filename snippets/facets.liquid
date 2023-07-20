@@ -88,6 +88,32 @@
  <label> {{- link.title | escape -}} </label>
   {% else %}
 <label for="HeaderMenu-{{ link.handle }}" data-url="{{ link.url }}" class="collection-link"> {{- link.title | escape -}} </label>
+
+{% comment %}
+  https://emblemathletic.shop/search?q=shirts
+{% endcomment %}
+
+For Search Function - 
+
+<label for="HeaderMenu-{{ link.handle }}" data-url="
+
+https://emblemathletic.shop/
+
+
+
+
+" 
+data-search-key = "{{- link.handle | escape -}}" 
+
+class="collection-link"> {{- link.title | escape -}} </label>
+
+
+
+
+
+
+
+
  {% endif %}
 
 
@@ -1222,9 +1248,13 @@ checkbox_elements.forEach(function(checkbox_element) {
 
  // checkbox_elements.removeAttribute('checked');
 
-    var url = this.dataset.url;
+    const url = this.dataset.url;
+
+    const search_key = this.dataset.key;
+
+
     
-    window.location.href = url;
+    window.location.href = url+search_key;
   });
 });
 

@@ -39,6 +39,8 @@
 </h2>
 
 
+{{ collection.terms }}
+
 
 
 {% assign search_terms = search.terms | escape  %}
@@ -87,6 +89,9 @@
   {% if link.current %}
  <label> {{- link.title | escape -}} </label>
   {% else %}
+
+
+
   {% comment %}
 <label for="HeaderMenu-{{ link.handle }}" data-url="{{ link.url }}" class="collection-link"> {{- link.title | escape -}} </label>
 

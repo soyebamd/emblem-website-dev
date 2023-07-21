@@ -415,9 +415,9 @@ or section.settings.enable_follow_on_shop
     textElement.forEach(typeEffect => {
 
 
-      const text = typeEffect.textContent;
+      let text = typeEffect.textContent;
       typeEffect.textContent = ''; // Clear the original text to start typing effect
-      const speed = 100; // Adjust speed (in milliseconds) for a faster/slower effect
+      let speed = 100; // Adjust speed (in milliseconds) for a faster/slower effect
       typeWriterEffect(typeEffect, text, speed);
 
 

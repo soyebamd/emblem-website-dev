@@ -392,7 +392,29 @@ or section.settings.enable_follow_on_shop
 
       window.location.href = '/pages/custom-unit-gear';
 
-    })
+    });
+
+
+
+// Function to simulate typewriter text effect
+    function typeWriterEffect(textElement, text, speed) {
+      let index = 0;
+      function type() {
+        if (index < text.length) {
+          textElement.textContent += text.charAt(index);
+          index++;
+          setTimeout(type, speed);
+        }
+      }
+      type();
+    }
+
+// Call the function with your desired text and speed
+    const textElement = document.querySelector('.cursive');
+    const text = textElement.textContent;
+    textElement.textContent = ''; // Clear the original text to start typing effect
+    const speed = 100; // Adjust speed (in milliseconds) for a faster/slower effect
+    typeWriterEffect(textElement, text, speed);
   </script>
 
 

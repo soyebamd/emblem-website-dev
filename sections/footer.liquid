@@ -377,6 +377,18 @@ or section.settings.enable_follow_on_shop
   </div>
 
 
+  <script>
+    const hoverHasMenu = document.querySelector('#Details-HeaderMenu-3');
+
+    hoverHasMenu.addEventListener('mouseover', function() {
+      hoverHasMenu.setAttribute('open', 'true');
+    });
+
+    hoverHasMenu.addEventListener('mouseout', function() {
+      hoverHasMenu.removeAttribute('open');
+    });
+  </script>
+
 
   <!-- end Custom Footer -->
 

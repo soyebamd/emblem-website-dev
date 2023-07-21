@@ -411,10 +411,17 @@ or section.settings.enable_follow_on_shop
 
 // Call the function with your desired text and speed
     const textElement = document.querySelectorAll('.cursive');
-    const text = textElement[0].textContent;
-    textElement[0].textContent = ''; // Clear the original text to start typing effect
-    const speed = 100; // Adjust speed (in milliseconds) for a faster/slower effect
-    typeWriterEffect(textElement[0], text, speed);
+
+    textElement.forEach(typeEffect => {
+
+
+      const text = typeEffect.textContent;
+      typeEffect.textContent = ''; // Clear the original text to start typing effect
+      const speed = 100; // Adjust speed (in milliseconds) for a faster/slower effect
+      typeWriterEffect(typeEffect, text, speed);
+
+
+    })
   </script>
 
 

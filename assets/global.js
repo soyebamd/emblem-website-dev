@@ -14,7 +14,7 @@ document.querySelectorAll('[id^="Details-"] summary').forEach((summary) => {
     summary.setAttribute('aria-controls', summary.nextElementSibling.id);
   }
 
-  summary.addEventListener('', (event) => {
+  summary.addEventListener('click', (event) => {
     event.currentTarget.setAttribute('aria-expanded', !event.currentTarget.closest('details').hasAttribute('open'));
   });
 
@@ -346,10 +346,10 @@ class MenuDrawer extends HTMLElement {
 
   bindEvents() {
     this.querySelectorAll('summary').forEach((summary) =>
-      summary.addEventListener('click', this.onSummaryClick.bind(this))
+      summary.addEventListener('keyup', this.onSummaryClick.bind(this))
     );
     this.querySelectorAll('button:not(.localization-selector)').forEach((button) =>
-      button.addEventListener('click', this.onCloseButtonClick.bind(this))
+      button.addEventListener('focusout', this.onCloseButtonClick.bind(this))
     );
   }
 

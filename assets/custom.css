@@ -572,6 +572,9 @@ span.active-facets__button-inner {
   margin: auto;
 }
 
+
+#FacetFiltersForm{ display: none!important; visibility: hidden; opacity: 0;}
+
 @keyframes fadeInUp {
   0% {
     transform: translate3d(0, 100%, 0);

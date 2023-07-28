@@ -309,7 +309,10 @@
   const button = document.querySelectorAll('label.button');
 
   button.forEach(findTarget => findTarget.addEventListener('click', function() {
-    console.log(this.getAttribute('data-id'));
+    const openIDWrapper = this.getAttribute('data-id');
+
+    document.getElementById('#' + openIDWrapper).style.display = 'block';
+
   }));
 </script>
 

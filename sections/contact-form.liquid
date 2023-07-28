@@ -311,7 +311,7 @@
   button.forEach(findTarget => findTarget.addEventListener('click', function() {
 
 
-    console.log(this)
+    console.log(this.getAttributes('data-id'))
 
   }))
 </script>

@@ -63,6 +63,52 @@
         </ul>
       {%- endif -%}
       <div class="contact__fields">
+
+
+        <div class="field">
+
+          <label class="field__label" style="display:block">Best describes your needs</label>
+
+          <input
+            type="radio"
+            id="order_after_7_1_22"
+            name="contact[Best Describes]"
+            value="WHERE IS MY ORDER? (placed after 7/1/22)">
+          <label for="order_after_7_1_22">WHERE IS MY ORDER? (placed after 7/1/22)</label>
+
+          <input
+            type="radio"
+            id="order_before_7_1_22"
+            name="contact[Best Describes]"
+            value="WHERE IS MY ORDER? (PLACED BEFORE 7/1/22)">
+          <label for="order_before_7_1_22">WHERE IS MY ORDER? (PLACED BEFORE 7/1/22)</label>
+
+          <input
+            type="radio"
+            id="cant_find_store"
+            name="contact[Best Describes]"
+            value="CAN'T FIND MY STORE!">
+          <label for="cant_find_store">CAN'T FIND MY STORE!</label>
+
+          <input
+            type="radio"
+            id="need_new_store"
+            name="contact[Best Describes]"
+            value="Need a new store!">
+          <label for="need_new_store">Need a new store!</label>
+
+          <input
+            type="radio"
+            id="update_my_store"
+            name="contact[Best Describes]"
+            value="UPDATE MY STORE!">
+          <label for="update_my_store">UPDATE MY STORE!</label>
+
+
+
+        </div>
+
+
         <div class="field">
           <input
             class="field__input"
@@ -114,102 +160,6 @@
           placeholder="{{ 'templates.contact.form.phone' | t }}">
         <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
       </div>
-
-
-      <div class="field">
-
-
-
-        <label
-          class="field__label"
-          for="describes"
-          style="display:block">Best describes your needs</label>
-
-
-        <select id="describes" name="contact['Best Describes']">
-
-          <option vlaue="
-                                                                                              WHERE IS MY ORDER? (placed after 7/1/22)
-                                                                                            ">
-            WHERE IS MY ORDER? (placed after 7/1/22)
-          </option>
-
-
-          <option vlaue="
-                                                                                              
-                                                                          WHERE IS MY ORDER? (PLACED BEFORE 7/1/22)
-                                                                        
-                                                                                            ">
-
-            WHERE IS MY ORDER? (PLACED BEFORE 7/1/22)
-
-          </option>
-
-
-
-          <option vlaue="
-                                                                                              
-                                                                  CAN'T FIND MY STORE!
-                                                                        
-                                                                                            ">
-
-            CAN'T FIND MY STORE!
-
-          </option>
-
-
-          <option vlaue="
-                                                                                              
-                                                                
-                                              Need a new store!
-                                            
-                                                                        
-                                                                                            ">
-
-
-            Need a new store!
-
-
-          </option>
-
-
-
-          <option vlaue="
-                                                                                              
-                                                                
-                                                  
-                                UPDATE MY STORE!
-                              
-                                                  
-                                                                              
-                                                                                                  ">
-
-
-
-            UPDATE MY STORE!
-
-
-
-          </option>
-
-
-
-        </select>
-
-        <input
-          type="tel"
-          id="describes"
-          class="field__input"
-          autocomplete="tel"
-          name="contact[{{ 'templates.contact.form.phone' | t }}]"
-          pattern="[0-9\-]*"
-          value="{% if form.phone %}{{ form.phone }}{% elsif customer %}{{ customer.phone }}{% endif %}"
-          placeholder="{{ 'templates.contact.form.phone' | t }}">
-        <label class="field__label" for="ContactForm-phone">{{ 'templates.contact.form.phone' | t }}</label>
-      </div>
-
-
-
       <div class="field">
         <textarea
           rows="10"

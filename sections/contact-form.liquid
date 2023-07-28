@@ -313,6 +313,10 @@
 
     console.log(openIDWrapper);
 
+    const closeDefault = document.querySelectorAll('.order_query');
+
+    closeDefault.forEach(hideme => hideme.style.display = 'none');
+
     const openDiv = document.getElementById(openIDWrapper);
 
     openDiv.style.display = 'block';

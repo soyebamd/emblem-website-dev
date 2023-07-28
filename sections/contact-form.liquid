@@ -308,6 +308,13 @@
 
   const button = document.querySelectorAll('label.button');
 
+  button.forEach(findTarget => findTarget.addEventListener('click', function() {
+
+
+    console.log(this)
+
+  }))
+
   console.log(button)
 </script>
 

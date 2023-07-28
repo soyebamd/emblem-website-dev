@@ -18,6 +18,11 @@
   }
 
 
+  .order_query {
+    display: none;
+  }
+
+
   .emblem-contact-form {
     text-align: center;
     margin-bottom: 40px;
@@ -99,7 +104,10 @@
           value="WHERE IS MY ORDER? (placed after 7/1/22)">
 
 
-        <label for="order_after_7_1_22" class="button">
+        <label
+          for="order_after_7_1_22"
+          date-id="order_query_1"
+          class="button">
 
 
 
@@ -110,28 +118,107 @@
           id="order_before_7_1_22"
           name="contact[Best Describes]"
           value="WHERE IS MY ORDER? (PLACED BEFORE 7/1/22)">
-        <label for="order_before_7_1_22" class="button">WHERE IS MY ORDER? (PLACED BEFORE 7/1/22)</label>
+        <label
+          for="order_before_7_1_22"
+          date-id="order_query_2"
+          class="button">WHERE IS MY ORDER? (PLACED BEFORE 7/1/22)</label>
 
         <input
           type="radio"
           id="cant_find_store"
           name="contact[Best Describes]"
           value="CAN'T FIND MY STORE!">
-        <label for="cant_find_store" class="button">CAN'T FIND MY STORE!</label>
+        <label
+          for="cant_find_store"
+          date-id="order_query_3"
+          class="button btn-target">CAN'T FIND MY STORE!</label>
 
         <input
           type="radio"
           id="need_new_store"
           name="contact[Best Describes]"
           value="Need a new store!">
-        <label for="need_new_store" class="button">Need a new store!</label>
+        <label
+          for="need_new_store"
+          date-id="order_query_4"
+          class="button">Need a new store!</label>
 
         <input
           type="radio"
           id="update_my_store"
           name="contact[Best Describes]"
           value="UPDATE MY STORE!">
-        <label for="update_my_store" class="button">UPDATE MY STORE!</label>
+        <label
+          for="update_my_store"
+          date-id="order_query_5"
+          class="button">UPDATE MY STORE!</label>
+
+
+
+      </div>
+
+
+      <div class="emblem-contact-form__text">
+
+
+        <div id="order_query_1" class="order_query">
+
+          <p>Need an update on an order placed after 7/1/2022? No problem! Include your order number if you can. Remember that production at our US factory begins when your order is placed, and may take up to 18 business days to complete and ship.
+          </p>
+
+
+        </div>
+
+
+
+        <div id="order_query_2" class="order_query">
+
+          <p>
+
+            DID YOU PLACE AN ORDER PRIOR TO 1 JULY 2022 THAT HAS NOT BEEN DELIVERED, WAS DELIVERED INCORRECTLY, OR WERE YOU PROMISED A REFUND THAT HAS NOT BEEN PROCESSED? EMBLEM’S NEW OWNERSHIP IS HERE TO HELP! GIVE US YOUR ORDER#, CURRENT ADDRESS, AND CONTACT# HERE.
+
+          </p>
+
+
+        </div>
+
+
+
+        <div id="order_query_3" class="order_query">
+
+          <p>
+            Feeling like an LT on a land nav course? We’ll get you on track. Include your unit name in your message.
+
+
+          </p>
+
+
+        </div>
+
+
+
+        <div id="order_query_4" class="order_query">
+
+          <p>
+
+            Need some help getting a new store or bulk order submitted? Give our sales squad a shout.
+
+
+          </p>
+
+
+        </div>
+
+
+
+        <div id="order_query_5" class="order_query">
+
+          <p>
+            Ready to update your unit store designs? We’ll shake off the dust and make it fresh!
+          </p>
+
+
+        </div>
 
 
 
@@ -215,6 +302,14 @@
     {%- endform -%}
   </div>
 </div>
+
+
+<script>
+
+  const button = document.querySelectorAll('label.button');
+
+  console.log(button)
+</script>
 
 {% schema %}
   {

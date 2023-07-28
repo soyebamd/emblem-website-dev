@@ -21,28 +21,22 @@
   }
 
   .footer {
-    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}
-    px;
+    margin-top: {{ section.settings.margin_top | times: 0.75 | round: 0 }}px;
   }
 
   .section-{{ section.id }}-padding {
-    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}
-    px;
-    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}
-    px;
+    padding-top: {{ section.settings.padding_top | times: 0.75 | round: 0 }}px;
+    padding-bottom: {{ section.settings.padding_bottom | times: 0.75 | round: 0 }}px;
   }
 
   @media screen and (min-width: 750px) {
     .footer {
-      margin-top: {{ section.settings.margin_top }}
-      px;
+      margin-top: {{ section.settings.margin_top }}px;
     }
 
     .section-{{ section.id }}-padding {
-      padding-top: {{ section.settings.padding_top }}
-      px;
-      padding-bottom: {{ section.settings.padding_bottom }}
-      px;
+      padding-top: {{ section.settings.padding_top }}px;
+      padding-bottom: {{ section.settings.padding_bottom }}px;
     }
   }
 {%- endstyle -%}
@@ -378,6 +372,8 @@ or section.settings.enable_follow_on_shop
 
 
   <script>
+
+  /*
     const hoverHasMenu = document.querySelector('#Details-HeaderMenu-3');
 
     hoverHasMenu.addEventListener('mouseover', function() {
@@ -394,7 +390,7 @@ or section.settings.enable_follow_on_shop
 
     });
 
-
+*/
 
 // Function to simulate typewriter text effect
     function typeWriterEffect(textElement, text, speed) {

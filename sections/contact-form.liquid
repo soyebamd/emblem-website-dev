@@ -16,6 +16,12 @@
       px;
     }
   }
+
+  .emblem-contact-form label {}
+
+  .emblem-contact-form input:checked + label {
+    background: black;
+  }
 {%- endstyle -%}
 
 <div class="color-{{ section.settings.color_scheme }} gradient">
@@ -64,7 +70,7 @@
       {%- endif -%}
 
 
-      <div class="no-field">
+      <div class="emblem-contact-form">
 
 
         <input
@@ -85,7 +91,7 @@
           id="order_before_7_1_22"
           name="contact[Best Describes]"
           value="WHERE IS MY ORDER? (PLACED BEFORE 7/1/22)">
-        <label for="order_before_7_1_22">WHERE IS MY ORDER? (PLACED BEFORE 7/1/22)</label>
+        <label for="order_before_7_1_22" class="button">WHERE IS MY ORDER? (PLACED BEFORE 7/1/22)</label>
 
         <input
           type="radio"

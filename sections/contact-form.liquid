@@ -311,7 +311,9 @@
   button.forEach(findTarget => findTarget.addEventListener('click', function() {
     const openIDWrapper = this.getAttribute('data-id');
 
-    document.getElementById('#' + openIDWrapper).style.display = 'block';
+    const openDiv = document.getElementById('#' + openIDWrapper);
+
+    console.log(openDiv)
 
   }));
 </script>

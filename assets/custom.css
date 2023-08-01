@@ -679,6 +679,9 @@ span.active-facets__button-inner {
   html {
     font-size: 85%;
   }
+  .footer__content-top .list-menu__item {
+    line-height: 1.3em !important;
+  }
 }
 
 @media (max-width: 1100px) {

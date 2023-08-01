@@ -30,15 +30,10 @@
       <h2 class="h3 text-uppercase related-products__heading {{ section.settings.heading_size }}">
         {{ section.settings.heading }}
       </h2>
+
+      {{ product.collections }}
       <ul class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down" role="list">
-
-
-
-      {{recommendations.products}}
-
         {% for recommendation in recommendations.products %}
-
-          {{recommendation}}
           <li class="grid__item">
             {% render 'card-product-featured' 
              , card_product: recommendation,

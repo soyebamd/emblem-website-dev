@@ -24,12 +24,6 @@
   }
 {%- endstyle -%}
 
-{% for product in collections['emblem-retail'].products %}
-  {{ product.title }}
-  <!-- Other product attributes or content can be displayed here -->
-{% endfor %}
-
-
 <div class="color-{{ section.settings.color_scheme }} gradient no-js-hidden">
   <product-recommendations class="related-products page-width section-{{ section.id }}-padding isolate{% if settings.animations_reveal_on_scroll %} scroll-trigger animate--slide-in{% endif %}" data-url="{{ routes.product_recommendations_url }}?section_id={{ section.id }}&product_id={{ product.id }}&limit={{ section.settings.products_to_show }}">
     {% if recommendations.performed and recommendations.products_count > 0 %}
@@ -38,9 +32,10 @@
       </h2>
       <ul class="grid product-grid grid--{{ section.settings.columns_desktop }}-col-desktop grid--{{ section.settings.columns_mobile }}-col-tablet-down" role="list">
         {% for product in collections['emblem-retail'].products %}
+
           <li class="grid__item">
             {% render 'card-product-featured' 
-             , card_product: emblem-retail,
+             , card_product: product,
              media_aspect_ratio: section.settings.image_ratio,
              image_shape: section.settings.image_shape,
              show_secondary_image: section.settings.show_secondary_image,
